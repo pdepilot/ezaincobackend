@@ -34,7 +34,7 @@ const sections = {
   icon:'notebook-pen',
   fields:[
    ['title','Article title','text',true],
-   ['slug','Article URL / slug (e.g. blog-post/blog-how-to-plan-interior-design-project-owerri.html)','text',true],
+   ['slug','Article URL / slug (e.g. blog-post/blog-how-to-plan-interior-design-project-owerri.php)','text',true],
    ['category','Category','select',true,['Design Advice','Materials & Finishes','Inspiration','Studio News','Project Stories','Guides']],
    ['author','Author / Byline (e.g. Arc. Chinedu Brist)','text',true],
    ['date','Publication date (e.g. October 2026)','text',false],
@@ -69,7 +69,7 @@ const sections = {
   icon:'files',
   fields:[
    ['title','Page title','text',true],
-   ['slug','Page URL / slug (e.g. index.html, services.html, catalog.html)','text',true],
+   ['slug','Page URL / slug (e.g. index.php, services.php, catalog.php)','text',true],
    ['heroEyebrow','Hero eyebrow / kicker (e.g. Tailored Capabilities)','text',false],
    ['heroTitle','Hero headline (e.g. End-to-End Interior Architecture & Styling)','text',false],
    ['image','Featured page header image URL / Upload','image',false],
@@ -185,8 +185,8 @@ const seed = {
   {id:'p5',title:'Nordic Minimalist Villa',category:'Residential',location:'Port Harcourt, Rivers State',client:'Private Villa',year:'2025',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',features:'Open-Concept Living, Natural White Oak Joinery, Low-VOC Mineral Washes',description:'Light-filled residence emphasizing clean lines, functional geometry and organic textures.',status:'Draft'}
  ],
  journal:[
-  {id:'j1',title:'How to Plan an Interior Design Project in Owerri',slug:'blog-post/blog-how-to-plan-interior-design-project-owerri.html',category:'Design Advice',author:'Arc. Chinedu Brist',date:'October 2026',readTime:'6 Min Read',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',excerpt:'Why bringing an interior architect onboard during the early blockwork and lintel stage saves millions of naira in conduit re-channelling and ceiling rework.',content:'Planning an interior architecture project in Nigeria requires proactive coordination between structural engineers, MEP artisans, and finish specialists. Early spatial zoning prevents costly electrical re-routing and ensures every joinery piece sits seamlessly against finished walls.',tags:'Space Planning, Budgeting, Architecture',status:'Published'},
-  {id:'j2',title:'Choosing Finishes for the Tropical Nigerian Climate',slug:'journal.html#tropical-finishes',category:'Materials & Finishes',author:'BRISTS Materials Lab',date:'September 2026',readTime:'5 Min Read',image:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80',excerpt:'Selecting moisture-resistant veneers, anti-fungal emulsion paints and thermal-efficient flooring that withstand seasonal humidity.',content:'The high humidity and temperature variations of southeastern Nigeria demand intentional material choices: sealed marine-grade ply substrates, sintered stone vanity tops, and breathable linen upholstery that retains its tactile richness over decades.',tags:'Materials, Climate, Luxury Finishes',status:'Published'}
+  {id:'j1',title:'How to Plan an Interior Design Project in Owerri',slug:'blog-post/blog-how-to-plan-interior-design-project-owerri.php',category:'Design Advice',author:'Arc. Chinedu Brist',date:'October 2026',readTime:'6 Min Read',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',excerpt:'Why bringing an interior architect onboard during the early blockwork and lintel stage saves millions of naira in conduit re-channelling and ceiling rework.',content:'Planning an interior architecture project in Nigeria requires proactive coordination between structural engineers, MEP artisans, and finish specialists. Early spatial zoning prevents costly electrical re-routing and ensures every joinery piece sits seamlessly against finished walls.',tags:'Space Planning, Budgeting, Architecture',status:'Published'},
+  {id:'j2',title:'Choosing Finishes for the Tropical Nigerian Climate',slug:'journal.php#tropical-finishes',category:'Materials & Finishes',author:'BRISTS Materials Lab',date:'September 2026',readTime:'5 Min Read',image:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80',excerpt:'Selecting moisture-resistant veneers, anti-fungal emulsion paints and thermal-efficient flooring that withstand seasonal humidity.',content:'The high humidity and temperature variations of southeastern Nigeria demand intentional material choices: sealed marine-grade ply substrates, sintered stone vanity tops, and breathable linen upholstery that retains its tactile richness over decades.',tags:'Materials, Climate, Luxury Finishes',status:'Published'}
  ],
  services:[
   {id:'s1',title:'Residential Interior Design',category:'Residential',badge:'Turnkey Luxury',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',deliverables:'3D Renders, Space Planning, Custom Joinery, Material Schedule, Procurement',timeline:'6–10 Weeks',description:'Complete design transformation for duplexes, penthouses, and private villas with bespoke cabinetry and curated lighting.',status:'Published'},
@@ -195,12 +195,12 @@ const seed = {
   {id:'s4',title:'Turnkey Fit-Out & Project Supervision',category:'Turnkey Fit-Out',badge:'Full-Service Execution',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',deliverables:'Site Supervision, Subcontractor Quality Control, Milestone Reporting, White-Glove Handover',timeline:'8–16 Weeks',description:'End-to-end site management ensuring design intent, structural integrity, and flawless execution from slab to styling.',status:'Published'}
  ],
  pages:[
-  {id:'pg1',title:'Home',slug:'index.html',heroEyebrow:'BRISTS INTERIOR DESIGN',heroTitle:'Spaces designed around the way you live',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',description:'Thoughtful interiors, refined finishes and purposeful design for spaces that feel distinctly yours.',seoTitle:'BRISTS Interior Design | Luxury Spaces in Owerri & Lagos',seoDescription:'Award-winning interior architecture, bespoke styling and full turnkey execution in southeastern Nigeria.',status:'Published'},
-  {id:'pg2',title:'Services',slug:'services.html',heroEyebrow:'Tailored Capabilities',heroTitle:'End-to-End Interior Architecture & Styling',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',description:'From initial structural zoning to bespoke furnishing and white-glove handover.',seoTitle:'Services | BRISTS Interior Architecture',seoDescription:'Residential, commercial, bespoke styling and turnkey fit-out capabilities.',status:'Published'},
-  {id:'pg3',title:'Catalog',slug:'catalog.html',heroEyebrow:'Selected Works',heroTitle:'Curated Spaces & Recent Case Studies',image:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',description:'Explore our signature completed projects across Owerri, Lagos, and southeastern Nigeria.',seoTitle:'Catalog | BRISTS Interior Design',seoDescription:'Explore signature residential and commercial projects by BRISTS.',status:'Published'},
-  {id:'pg4',title:'About',slug:'about.html',heroEyebrow:'The Studio Atelier',heroTitle:'Architectural Rigour Meets Botanical Luxury',image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',description:'The philosophy, leadership team, and craft standards behind BRISTS.',seoTitle:'About Us | BRISTS Interior Design Studio',seoDescription:'Meet the team and architectural principles defining BRISTS.',status:'Published'},
-  {id:'pg5',title:'Journal',slug:'journal.html',heroEyebrow:'Studio Chronicles',heroTitle:'Insights on Interior Architecture & Living',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',description:'Practical guidance, material spotlights and studio perspectives.',seoTitle:'The Journal | BRISTS Interior Design',seoDescription:'Design advice and project stories from the BRISTS atelier.',status:'Published'},
-  {id:'pg6',title:'Contact',slug:'contact.html',heroEyebrow:'Studio Consultations',heroTitle:'Begin Your Space Transformation',image:'../assets/image-web/premium_photo-1661879252375-7c1db1932572.avif',description:'Book an on-site or digital consultation with our lead interior architects.',seoTitle:'Contact & Consultations | BRISTS Atelier',seoDescription:'Book a consultation or reach the BRISTS design studio in Owerri.',status:'Published'}
+  {id:'pg1',title:'Home',slug:'index.php',heroEyebrow:'BRISTS INTERIOR DESIGN',heroTitle:'Spaces designed around the way you live',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',description:'Thoughtful interiors, refined finishes and purposeful design for spaces that feel distinctly yours.',seoTitle:'BRISTS Interior Design | Luxury Spaces in Owerri & Lagos',seoDescription:'Award-winning interior architecture, bespoke styling and full turnkey execution in southeastern Nigeria.',status:'Published'},
+  {id:'pg2',title:'Services',slug:'services.php',heroEyebrow:'Tailored Capabilities',heroTitle:'End-to-End Interior Architecture & Styling',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',description:'From initial structural zoning to bespoke furnishing and white-glove handover.',seoTitle:'Services | BRISTS Interior Architecture',seoDescription:'Residential, commercial, bespoke styling and turnkey fit-out capabilities.',status:'Published'},
+  {id:'pg3',title:'Catalog',slug:'catalog.php',heroEyebrow:'Selected Works',heroTitle:'Curated Spaces & Recent Case Studies',image:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',description:'Explore our signature completed projects across Owerri, Lagos, and southeastern Nigeria.',seoTitle:'Catalog | BRISTS Interior Design',seoDescription:'Explore signature residential and commercial projects by BRISTS.',status:'Published'},
+  {id:'pg4',title:'About',slug:'about.php',heroEyebrow:'The Studio Atelier',heroTitle:'Architectural Rigour Meets Botanical Luxury',image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',description:'The philosophy, leadership team, and craft standards behind BRISTS.',seoTitle:'About Us | BRISTS Interior Design Studio',seoDescription:'Meet the team and architectural principles defining BRISTS.',status:'Published'},
+  {id:'pg5',title:'Journal',slug:'journal.php',heroEyebrow:'Studio Chronicles',heroTitle:'Insights on Interior Architecture & Living',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',description:'Practical guidance, material spotlights and studio perspectives.',seoTitle:'The Journal | BRISTS Interior Design',seoDescription:'Design advice and project stories from the BRISTS atelier.',status:'Published'},
+  {id:'pg6',title:'Contact',slug:'contact.php',heroEyebrow:'Studio Consultations',heroTitle:'Begin Your Space Transformation',image:'../assets/image-web/premium_photo-1661879252375-7c1db1932572.avif',description:'Book an on-site or digital consultation with our lead interior architects.',seoTitle:'Contact & Consultations | BRISTS Atelier',seoDescription:'Book a consultation or reach the BRISTS design studio in Owerri.',status:'Published'}
  ],
  consultations:[
   {id:'c1',title:'Adaobi N.',email:'adaobi@example.com',phone:'+234 803 000 0011',category:'Residential',description:'Four-bedroom duplex renovation and bespoke open-plan living room redesign.',status:'New',created:'Today'},
@@ -234,9 +234,9 @@ const seed = {
   title:'Spaces designed around the way you live',
   description:'Thoughtful interiors, refined finishes and purposeful design for spaces that feel distinctly yours.',
   buttonText:'Book Consultation',
-  buttonLink:'contact.html#booking',
+  buttonLink:'contact.php#booking',
   secondaryButtonText:'Explore Catalog',
-  secondaryButtonLink:'catalog.html',
+  secondaryButtonLink:'catalog.php',
   image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',
   image2:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',
   image3:'../assets/image-web/photo-1704040686413-2c607dbd2f06.avif',
@@ -401,7 +401,7 @@ function analytics(){
  const rangeLabels={7:'Last 7 Days',14:'Last 14 Days',30:'Last 30 Days',90:'Last 90 Days',0:'All Time'};
  const days=analyticsRange===0?30:Math.min(30,Math.max(7,analyticsRange));
  const fmt=n=>Number(n).toLocaleString('en-NG');
- const pages=[{label:'Home',slug:'index.html',views:184,uniques:132,last:'4 min ago'},{label:'Catalog',slug:'catalog.html',views:147,uniques:103,last:'18 min ago'},{label:'Services',slug:'services.html',views:119,uniques:88,last:'32 min ago'},{label:'Contact',slug:'contact.html',views:86,uniques:61,last:'1 hour ago'},{label:'Journal',slug:'journal.html',views:64,uniques:48,last:'2 hours ago'},{label:'About',slug:'about.html',views:51,uniques:39,last:'3 hours ago'}];
+ const pages=[{label:'Home',slug:'index.php',views:184,uniques:132,last:'4 min ago'},{label:'Catalog',slug:'catalog.php',views:147,uniques:103,last:'18 min ago'},{label:'Services',slug:'services.php',views:119,uniques:88,last:'32 min ago'},{label:'Contact',slug:'contact.php',views:86,uniques:61,last:'1 hour ago'},{label:'Journal',slug:'journal.php',views:64,uniques:48,last:'2 hours ago'},{label:'About',slug:'about.php',views:51,uniques:39,last:'3 hours ago'}];
  const factor=analyticsRange===7?.34:analyticsRange===14?.58:analyticsRange===90?2.45:analyticsRange===0?5.8:1;
  const total=Math.round(651*factor),uniques=Math.round(471*factor),today=analyticsRange===0?23:Math.round(23*(analyticsRange===7?1.12:analyticsRange===14?.93:analyticsRange===90?1.08:1));
  const trend=Array.from({length:days},(_,i)=>{let d=new Date();d.setDate(d.getDate()-(days-1-i));let views=Math.round((9+(i*7)%18+Math.abs(Math.sin(i*1.31))*24)*(analyticsRange===90?1.5:analyticsRange===7?1.15:1));return {label:d.toLocaleDateString('en',{day:'2-digit',month:'short'}),views,uniques:Math.round(views*.69),today:i===days-1}});
@@ -434,9 +434,9 @@ function homepage(){
    <div class="form-field full"><label for="heroDesc">Supporting Narrative *</label><textarea id="heroDesc" name="description" required>${escapeHtml(h.description||'')}</textarea></div>
    
    <div class="form-field"><label for="heroButton">Primary Button Label</label><input id="heroButton" name="buttonText" value="${escapeHtml(h.buttonText||'')}"></div>
-   <div class="form-field"><label for="heroButtonLink">Primary Button Link</label><input id="heroButtonLink" name="buttonLink" value="${escapeHtml(h.buttonLink||'contact.html#booking')}"></div>
+   <div class="form-field"><label for="heroButtonLink">Primary Button Link</label><input id="heroButtonLink" name="buttonLink" value="${escapeHtml(h.buttonLink||'contact.php#booking')}"></div>
    <div class="form-field"><label for="heroSecButton">Secondary Button Label</label><input id="heroSecButton" name="secondaryButtonText" value="${escapeHtml(h.secondaryButtonText||'')}"></div>
-   <div class="form-field"><label for="heroSecLink">Secondary Button Link</label><input id="heroSecLink" name="secondaryButtonLink" value="${escapeHtml(h.secondaryButtonLink||'catalog.html')}"></div>
+   <div class="form-field"><label for="heroSecLink">Secondary Button Link</label><input id="heroSecLink" name="secondaryButtonLink" value="${escapeHtml(h.secondaryButtonLink||'catalog.php')}"></div>
 
    ${renderImageField('image', 'Hero Slide 1 Backdrop Image *', h.image, true, 'Primary backdrop image shown on first load.')}
    ${renderImageField('image2', 'Hero Slide 2 Backdrop Image', h.image2, false, 'Second rotating cross-fade slide.')}
@@ -598,16 +598,16 @@ function handleAction(action,id){
    sessionStorage.removeItem('brists_admin_auth');
    localStorage.removeItem('brists_admin_auth');
    toast('Signed out successfully.');
-   setTimeout(()=>{ window.location.href='login.html'; }, 400);
+   setTimeout(()=>{ window.location.href='login.php'; }, 400);
   }
   return;
  }
- if(action==='go-projects'){window.location.href='projects.html';return}
+ if(action==='go-projects'){window.location.href='projects.php';return}
  if(action==='new-project'){openModal('projects');return}
  if(action.startsWith('quick-')){
   const k=action.slice(6);
   if(sections[k]||['homepage','analytics','journal','projects','consultations'].includes(k)){
-   window.location.href=k+'.html';
+   window.location.href=k+'.php';
   }
   return;
  }
@@ -733,9 +733,9 @@ document.addEventListener('click', e=>{
  const nav=e.target.closest('.nav-link');
  if(nav){
   const targetHref=nav.getAttribute('href');
-  if(targetHref && targetHref.endsWith('.html')){
-   const curFile=location.pathname.split('/').pop()||'index.html';
-   const isCurrent=(targetHref===curFile)||(targetHref==='dashboard.html'&&(curFile==='index.html'||curFile==='dashboard.html'))||(targetHref==='index.html'&&(curFile==='index.html'||curFile==='dashboard.html'));
+  if(targetHref && targetHref.endsWith('.php')){
+   const curFile=location.pathname.split('/').pop()||'index.php';
+   const isCurrent=(targetHref===curFile)||(targetHref==='dashboard.php'&&(curFile==='index.php'||curFile==='dashboard.php'))||(targetHref==='index.php'&&(curFile==='index.php'||curFile==='dashboard.php'));
    if(isCurrent){
     e.preventDefault();
     setPage(nav.dataset.page||'dashboard');
@@ -754,7 +754,7 @@ document.addEventListener('click', e=>{
  if(pageLink){
   const p=pageLink.dataset.pageLink;
   if(p){
-   window.location.href=p+'.html';
+   window.location.href=p+'.php';
    return;
   }
  }
@@ -776,7 +776,7 @@ document.addEventListener('click', e=>{
  if(e.target.closest('#sidebarClose')){$('#sidebar').classList.remove('mobile-open');$('#scrim').classList.remove('show')}
  if(e.target.closest('#collapseBtn')){$('#sidebar').classList.toggle('collapsed');$('.main').classList.toggle('expanded')}
  if(e.target.closest('#themeBtn')) toggleTheme();
- if(e.target.closest('#profileShortcut')){window.location.href='profile.html';return;}
+ if(e.target.closest('#profileShortcut')){window.location.href='profile.php';return;}
  if(e.target.closest('#helpBtn')) handleAction('help');
  if(e.target.closest('#notificationsBtn')) toast('You are all caught up.');
  if(e.target.closest('#modalClose')||e.target.closest('#cancelModal')) closeModal();
@@ -806,7 +806,7 @@ function init(){
  const theme=localStorage.getItem('brists-theme');
  if(theme) setTheme(theme);
  $('#year').textContent=new Date().getFullYear();
- let file=location.pathname.split('/').pop().replace('.html','');
+ let file=location.pathname.split('/').pop().replace('.php','');
  if(!file||file==='index') file='dashboard';
  const hash=location.hash.replace('#','');
  const page=(hash&&(sections[hash]||['dashboard','analytics','homepage','profile','settings'].includes(hash)))?hash:file;

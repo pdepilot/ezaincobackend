@@ -140,7 +140,7 @@
         toast('Access granted. Initializing operations command...', 'success');
 
         setTimeout(() => {
-          window.location.href = 'dashboard.html';
+          window.location.href = 'dashboard.php';
         }, 650);
       }, 750);
     });

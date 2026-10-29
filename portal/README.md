@@ -5,7 +5,7 @@ A responsive admin dashboard template inspired by the supplied `portal.zip` dash
 ## Run it
 
 1. Extract this `portal` folder.
-2. Open `portal/index.html` in a modern browser. For the best local workflow, use VS Code with Live Server.
+2. Open `portal/index.php` in a modern browser. For the best local workflow, use VS Code with Live Server.
 3. Navigate through the sidebar. Add, edit, search, filter, change status, delete, and export content records.
 4. Use **Settings → Export backup** to download a JSON backup of the browser's current data.
 
@@ -43,13 +43,13 @@ To make it control the supplied website for real, add a backend/API and database
 
 ## Integration map
 
-The public site currently has static HTML pages such as `index.html`, `about.html`, `services.html`, `catalog.html`, `journal.html`, and `contact.html`. Those pages must be updated to load published content from the same backend/API used by this dashboard. The existing public `js/main.js` can continue handling presentation interactions, but content persistence and access control should be server-owned in a production implementation.
+The public site currently has static HTML pages such as `index.php`, `about.php`, `services.php`, `catalog.php`, `journal.php`, and `contact.php`. Those pages must be updated to load published content from the same backend/API used by this dashboard. The existing public `js/main.js` can continue handling presentation interactions, but content persistence and access control should be server-owned in a production implementation.
 
 ## Folder structure
 
 ```text
 portal/
-  index.html
+  index.php
   README.md
   css/
     admin.css

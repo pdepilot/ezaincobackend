@@ -38,22 +38,22 @@
     <div class="container nav-inner">
       <!-- Nav Links Left -->
       <nav class="nav-links nav-links--left" aria-label="Primary Navigation Left">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link active" href="catalog.html">Catalog</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="services.php">Services</a>
+        <a class="nav-link active" href="catalog.php">Catalog</a>
       </nav>
 
       <!-- Center Brand Logo -->
-      <a class="brand" href="index.html" aria-label="E-ZAINCO BRICK Home">
+      <a class="brand" href="index.php" aria-label="E-ZAINCO BRICK Home">
         <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand__logo-img" />
       </a>
 
       <div class="nav-right">
         <!-- Nav Links Right -->
         <nav class="nav-links nav-links--right" aria-label="Primary Navigation Right">
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="journal.html">Journal</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="about.php">About</a>
+          <a class="nav-link" href="journal.php">Journal</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </nav>
 
         <div class="nav-actions">
@@ -63,7 +63,7 @@
             <i data-lucide="moon" class="icon-moon"></i>
           </button>
 
-          <a class="btn btn--primary btn--sm" href="contact.html#booking">
+          <a class="btn btn--primary btn--sm" href="contact.php#booking">
             <span>Request Quote</span>
             <i data-lucide="arrow-up-right"></i>
           </a>
@@ -81,23 +81,23 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
     <div class="mobile-nav__header">
-      <a class="brand" href="index.html" style="text-decoration:none;">
+      <a class="brand" href="index.php" style="text-decoration:none;">
         <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" style="height:44px; width:auto; object-fit:contain;" />
       </a>
       <button class="mobile-nav__close" id="mobile-nav-close" type="button" aria-label="Close mobile navigation">&times;</button>
     </div>
 
     <ul class="mobile-nav__links">
-      <li><a class="mobile-nav__link" href="index.html"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="services.html"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link active" href="catalog.html"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="about.html"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="journal.html"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="contact.html"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="index.php"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="services.php"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link active" href="catalog.php"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="about.php"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="journal.php"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="contact.php"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
     </ul>
 
     <div class="mobile-nav__actions">
-      <a class="btn btn--primary" href="contact.html#booking">
+      <a class="btn btn--primary" href="contact.php#booking">
         <span>Request Quote</span>
         <i data-lucide="arrow-up-right"></i>
       </a>
@@ -122,7 +122,7 @@
     <section class="page-hero">
       <div class="container">
         <div class="page-hero__breadcrumbs">
-          <a href="index.html">Home</a>
+          <a href="index.php">Home</a>
           <i data-lucide="chevron-right" class="icon-14"></i>
           <span>Catalog</span>
         </div>
@@ -448,7 +448,7 @@
                 <span style="font-weight:600; font-size:0.95rem;">Zero plastering or painting required — lifetime durability</span>
               </div>
             </div>
-            <a class="btn btn--primary btn--md" href="contact.html#booking" style="margin-top:2rem;">
+            <a class="btn btn--primary btn--md" href="contact.php#booking" style="margin-top:2rem;">
               <span>Discuss Your Brick Build</span>
               <i data-lucide="arrow-up-right"></i>
             </a>
@@ -1222,7 +1222,7 @@
               Schedule an in-person factory yard visit in Owerri or an online consultation. We will analyze your architectural blueprints and prepare an itemized quantity takeoff.
             </p>
             <div class="conversion-band__actions">
-              <a class="btn btn--glacier btn--lg" href="contact.html#booking">
+              <a class="btn btn--glacier btn--lg" href="contact.php#booking">
                 <span>Request Brick Supply Quote</span>
                 <i data-lucide="arrow-up-right"></i>
               </a>
@@ -1315,7 +1315,7 @@
             <i data-lucide="message-circle" class="icon-18"></i>
             <span>Inquire About This Build</span>
           </a>
-          <a class="btn btn--outline" href="contact.html#booking">
+          <a class="btn btn--outline" href="contact.php#booking">
             <span>Request Brick Takeoff</span>
             <i data-lucide="arrow-up-right"></i>
           </a>
@@ -1405,7 +1405,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.php">
             <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand__logo-img" style="height:52px;" />
           </a>
           <p class="text-muted" style="font-size:0.925rem; line-height: 1.65; max-width: 320px;">
@@ -1450,24 +1450,24 @@
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Brick Services</a></li>
-            <li><a href="catalog.html">Brick Catalog</a></li>
-            <li><a href="about.html">About Factory</a></li>
-            <li><a href="journal.html">Masonry Journal</a></li>
-            <li><a href="contact.html">Request Quote</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="services.php">Brick Services</a></li>
+            <li><a href="catalog.php">Brick Catalog</a></li>
+            <li><a href="about.php">About Factory</a></li>
+            <li><a href="journal.php">Masonry Journal</a></li>
+            <li><a href="contact.php">Request Quote</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Brick Capabilities</h4>
           <ul class="footer-links">
-            <li><a href="services.html#bulk-supply">Bulk Brick Supply</a></li>
-            <li><a href="services.html#masonry">Structural Masonry</a></li>
-            <li><a href="services.html#cladding">Exposed Brick Cladding</a></li>
-            <li><a href="services.html#perimeter">Perimeter Fencing &amp; Paving</a></li>
-            <li><a href="contact.html#booking">Diaspora Project Oversight</a></li>
-            <li><a href="journal.html">Technical Guides</a></li>
+            <li><a href="services.php#bulk-supply">Bulk Brick Supply</a></li>
+            <li><a href="services.php#masonry">Structural Masonry</a></li>
+            <li><a href="services.php#cladding">Exposed Brick Cladding</a></li>
+            <li><a href="services.php#perimeter">Perimeter Fencing &amp; Paving</a></li>
+            <li><a href="contact.php#booking">Diaspora Project Oversight</a></li>
+            <li><a href="journal.php">Technical Guides</a></li>
           </ul>
         </div>
 

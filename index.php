@@ -108,9 +108,9 @@
 
       <!-- Left nav links -->
       <nav class="nav-links nav-links--left" aria-label="Primary Navigation Left">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link" href="catalog.html">Catalog</a>
+        <a class="nav-link active" href="index.php">Home</a>
+        <a class="nav-link" href="services.php">Services</a>
+        <a class="nav-link" href="catalog.php">Catalog</a>
       </nav>
 
       <!-- Centered logo -->
@@ -121,9 +121,9 @@
       <!-- Right nav links + actions -->
       <div class="nav-right">
         <nav class="nav-links nav-links--right" aria-label="Primary Navigation Right">
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="journal.html">Journal</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="about.php">About</a>
+          <a class="nav-link" href="journal.php">Journal</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </nav>
 
       <div class="nav-actions">
@@ -133,7 +133,7 @@
           <i data-lucide="moon" class="icon-moon"></i>
         </button>
 
-        <a class="btn btn--primary btn--sm" href="contact.html#booking">
+        <a class="btn btn--primary btn--sm" href="contact.php#booking">
           <span>Get Brick Quote</span>
           <i data-lucide="arrow-up-right"></i>
         </a>
@@ -151,23 +151,23 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
     <div class="mobile-nav__header">
-      <a class="brand" href="index.html" style="text-decoration:none;">
+      <a class="brand" href="index.php" style="text-decoration:none;">
         <img src="assets/logo/ezainco-brick-logo.png" alt="E-zainco Brick" style="height:38px; width:auto;" />
       </a>
       <button class="mobile-nav__close" id="mobile-nav-close" type="button" aria-label="Close mobile navigation">&times;</button>
     </div>
 
     <ul class="mobile-nav__links">
-      <li><a class="mobile-nav__link" href="index.html"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="services.html"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="catalog.html"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="about.html"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="journal.html"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="contact.html"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="index.php"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="services.php"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="catalog.php"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="about.php"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="journal.php"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="contact.php"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
     </ul>
 
     <div class="mobile-nav__actions">
-      <a class="btn btn--primary" href="contact.html#booking">
+      <a class="btn btn--primary" href="contact.php#booking">
         <span>Request Brick Quote</span>
         <i data-lucide="arrow-up-right"></i>
       </a>
@@ -705,7 +705,7 @@
         </div>
 
         <div style="text-align:center; margin-top: 3rem;" data-reveal>
-          <a class="btn btn--secondary btn--md" href="catalog.html">
+          <a class="btn btn--secondary btn--md" href="catalog.php">
             <span>Explore Full Brick Catalog</span>
             <i data-lucide="arrow-right"></i>
           </a>
@@ -866,11 +866,11 @@
             From bulk high-density brick supply to turnkey structural masonry supervision across Nigeria, calculate your Bill of Quantities or request specimen testing today.
           </p>
           <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-            <a class="btn btn--primary" href="contact.html#booking">
+            <a class="btn btn--primary" href="contact.php#booking">
               <span>Request Brick Estimate</span>
               <i data-lucide="arrow-up-right"></i>
             </a>
-            <a class="btn btn--secondary" href="catalog.html">
+            <a class="btn btn--secondary" href="catalog.php">
               <span>Browse Full Brick Catalog</span>
               <i data-lucide="arrow-right"></i>
             </a>
@@ -1123,7 +1123,7 @@
                 <span style="font-weight:600; font-size:0.95rem;">Complete turnkey masonry handover before you land in Nigeria</span>
               </div>
             </div>
-            <a class="btn btn--primary" href="about.html#approach">
+            <a class="btn btn--primary" href="about.php#approach">
               <span>Explore Diaspora Workflow</span>
               <i data-lucide="arrow-right"></i>
             </a>
@@ -1363,18 +1363,18 @@
         <div class="journal-grid" data-reveal>
           <!-- Article 1 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="blog-post/blog-how-to-plan-interior-design-project-owerri.html" aria-label="Read Why Compressed Earth Bricks Are Revolutionizing Nigerian Homes">
+            <a class="journal-card__thumb" href="blog-post/blog-how-to-plan-interior-design-project-owerri.php" aria-label="Read Why Compressed Earth Bricks Are Revolutionizing Nigerian Homes">
               <img class="journal-card__img" src="assets/image-web/south11.jpeg" alt="Compressed Earth Bricks in Nigerian Construction" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">October 2026 • 6 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="blog-post/blog-how-to-plan-interior-design-project-owerri.html" style="color:inherit; text-decoration:none;">Why Compressed Earth Bricks (CEB) Are Revolutionizing Nigerian Homes</a>
+                <a href="blog-post/blog-how-to-plan-interior-design-project-owerri.php" style="color:inherit; text-decoration:none;">Why Compressed Earth Bricks (CEB) Are Revolutionizing Nigerian Homes</a>
               </h3>
               <p class="journal-card__excerpt">
                 How hydraulic soil-cement compression creates durable, naturally cool building walls that slash air-conditioning power consumption and maintenance costs.
               </p>
-              <a class="btn btn--ghost" href="blog-post/blog-how-to-plan-interior-design-project-owerri.html" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="blog-post/blog-how-to-plan-interior-design-project-owerri.php" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Article</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -1383,18 +1383,18 @@
 
           <!-- Article 2 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="blog-post/blog-cost-of-interior-design-nigeria.html" aria-label="Read Cost Comparison: Pure Exposed Bricks vs Sandcrete Blocks">
+            <a class="journal-card__thumb" href="blog-post/blog-cost-of-interior-design-nigeria.php" aria-label="Read Cost Comparison: Pure Exposed Bricks vs Sandcrete Blocks">
               <img class="journal-card__img" src="assets/image-web/south12.jpeg" alt="Cost of brick construction vs sandcrete blocks" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">September 2026 • 7 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="blog-post/blog-cost-of-interior-design-nigeria.html" style="color:inherit; text-decoration:none;">Cost Comparison: Pure Exposed Bricks vs. Plastered Sandcrete Blocks</a>
+                <a href="blog-post/blog-cost-of-interior-design-nigeria.php" style="color:inherit; text-decoration:none;">Cost Comparison: Pure Exposed Bricks vs. Plastered Sandcrete Blocks</a>
               </h3>
               <p class="journal-card__excerpt">
                 Demystifying construction costs: why eliminating sand-cement plastering, primer, and periodic repainting saves property owners millions over 10 years.
               </p>
-              <a class="btn btn--ghost" href="blog-post/blog-cost-of-interior-design-nigeria.html" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="blog-post/blog-cost-of-interior-design-nigeria.php" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Article</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -1403,18 +1403,18 @@
 
           <!-- Article 3 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="blog-post/blog-choosing-materials-practical-home.html" aria-label="Read How to Protect Exposed Brickwork in Tropical Climates">
+            <a class="journal-card__thumb" href="blog-post/blog-choosing-materials-practical-home.php" aria-label="Read How to Protect Exposed Brickwork in Tropical Climates">
               <img class="journal-card__img" src="assets/image-web/south13.jpeg" alt="Protecting exposed brickwork in tropical rain" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">August 2026 • 5 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="blog-post/blog-choosing-materials-practical-home.html" style="color:inherit; text-decoration:none;">How to Protect and Seal Exposed Brickwork Against Tropical Rains</a>
+                <a href="blog-post/blog-choosing-materials-practical-home.php" style="color:inherit; text-decoration:none;">How to Protect and Seal Exposed Brickwork Against Tropical Rains</a>
               </h3>
               <p class="journal-card__excerpt">
                 Key masonry pointing techniques, silicone-based breathable water repellents, and coping overhang designs to keep brick facades flawless for decades.
               </p>
-              <a class="btn btn--ghost" href="blog-post/blog-choosing-materials-practical-home.html" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="blog-post/blog-choosing-materials-practical-home.php" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Article</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -1597,12 +1597,12 @@
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Brick Services</a></li>
-            <li><a href="catalog.html">Brick Catalog</a></li>
-            <li><a href="about.html">About Company</a></li>
-            <li><a href="journal.html">Brick Journal</a></li>
-            <li><a href="contact.html">Contact &amp; Quotes</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="services.php">Brick Services</a></li>
+            <li><a href="catalog.php">Brick Catalog</a></li>
+            <li><a href="about.php">About Company</a></li>
+            <li><a href="journal.php">Brick Journal</a></li>
+            <li><a href="contact.php">Contact &amp; Quotes</a></li>
           </ul>
         </div>
 
@@ -1610,12 +1610,12 @@
         <div class="footer-col">
           <h4>Brick Capabilities</h4>
           <ul class="footer-links">
-            <li><a href="services.html#manufacturing">Bulk Brick Supply</a></li>
-            <li><a href="services.html#construction">Architectural Masonry</a></li>
-            <li><a href="services.html#facades">Exposed Brick Cladding</a></li>
-            <li><a href="services.html#fencing">Perimeter Fencing &amp; Paving</a></li>
-            <li><a href="contact.html#booking">Diaspora Project Oversight</a></li>
-            <li><a href="journal.html">Masonry Technical Guides</a></li>
+            <li><a href="services.php#manufacturing">Bulk Brick Supply</a></li>
+            <li><a href="services.php#construction">Architectural Masonry</a></li>
+            <li><a href="services.php#facades">Exposed Brick Cladding</a></li>
+            <li><a href="services.php#fencing">Perimeter Fencing &amp; Paving</a></li>
+            <li><a href="contact.php#booking">Diaspora Project Oversight</a></li>
+            <li><a href="journal.php">Masonry Technical Guides</a></li>
           </ul>
         </div>
 

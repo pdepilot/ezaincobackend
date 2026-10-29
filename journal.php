@@ -38,22 +38,22 @@
     <div class="container nav-inner">
       <!-- Nav Links Left -->
       <nav class="nav-links nav-links--left" aria-label="Primary Navigation Left">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link" href="catalog.html">Catalog</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="services.php">Services</a>
+        <a class="nav-link" href="catalog.php">Catalog</a>
       </nav>
 
       <!-- Center Brand Logo -->
-      <a class="brand" href="index.html" aria-label="E-ZAINCO BRICK Home">
+      <a class="brand" href="index.php" aria-label="E-ZAINCO BRICK Home">
         <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand__logo-img" />
       </a>
 
       <div class="nav-right">
         <!-- Nav Links Right -->
         <nav class="nav-links nav-links--right" aria-label="Primary Navigation Right">
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link active" href="journal.html">Journal</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="about.php">About</a>
+          <a class="nav-link active" href="journal.php">Journal</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </nav>
 
         <div class="nav-actions">
@@ -63,7 +63,7 @@
             <i data-lucide="moon" class="icon-moon"></i>
           </button>
 
-          <a class="btn btn--primary btn--sm" href="contact.html#booking">
+          <a class="btn btn--primary btn--sm" href="contact.php#booking">
             <span>Request Quote</span>
             <i data-lucide="arrow-up-right"></i>
           </a>
@@ -81,23 +81,23 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
     <div class="mobile-nav__header">
-      <a class="brand" href="index.html" style="text-decoration:none;">
+      <a class="brand" href="index.php" style="text-decoration:none;">
         <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" style="height:44px; width:auto; object-fit:contain;" />
       </a>
       <button class="mobile-nav__close" id="mobile-nav-close" type="button" aria-label="Close mobile navigation">&times;</button>
     </div>
 
     <ul class="mobile-nav__links">
-      <li><a class="mobile-nav__link" href="index.html"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="services.html"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="catalog.html"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="about.html"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link active" href="journal.html"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
-      <li><a class="mobile-nav__link" href="contact.html"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="index.php"><span>Home</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="services.php"><span>Services</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="catalog.php"><span>Catalog</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="about.php"><span>About</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link active" href="journal.php"><span>Journal</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
+      <li><a class="mobile-nav__link" href="contact.php"><span>Contact</span> <i data-lucide="arrow-right" class="icon-16"></i></a></li>
     </ul>
 
     <div class="mobile-nav__actions">
-      <a class="btn btn--primary" href="contact.html#booking">
+      <a class="btn btn--primary" href="contact.php#booking">
         <span>Request Quote</span>
         <i data-lucide="arrow-up-right"></i>
       </a>
@@ -122,7 +122,7 @@
     <section class="page-hero">
       <div class="container">
         <div class="page-hero__breadcrumbs">
-          <a href="index.html">Home</a>
+          <a href="index.php">Home</a>
           <i data-lucide="chevron-right" class="icon-14"></i>
           <span>Journal</span>
         </div>
@@ -142,18 +142,18 @@
         <div class="journal-grid" data-reveal>
           <!-- Article 1 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read How to Plan a Pure Brick Construction Project">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read How to Plan a Pure Brick Construction Project">
               <img class="journal-card__img" src="assets/image-web/south8.jpeg" alt="How to Plan a Pure Brick Construction Project in Nigeria" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">October 2026 • 6 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">How to Plan a Pure Brick Construction Project in Nigeria</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">How to Plan a Pure Brick Construction Project in Nigeria</a>
               </h3>
               <p class="journal-card__excerpt">
                 Why load-bearing masonry saves up to 35% on building costs by eliminating column formwork, wall plastering, screeding, and recurrent repainting.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -162,18 +162,18 @@
 
           <!-- Article 2 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read Sandcrete vs Compressed Earth Bricks">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read Sandcrete vs Compressed Earth Bricks">
               <img class="journal-card__img" src="assets/image-web/south9.jpeg" alt="Sandcrete Blocks vs Compressed Earth Bricks in Nigeria" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">September 2026 • 7 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">Sandcrete Blocks vs. Compressed Earth Bricks: The 2026 Durability Breakdown</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">Sandcrete Blocks vs. Compressed Earth Bricks: The 2026 Durability Breakdown</a>
               </h3>
               <p class="journal-card__excerpt">
                 A laboratory compressive test comparison: 2.5 MPa hollow sandcrete vs. 10.5 MPa hydraulic stabilized earth bricks, water porosity, and generational lifespan.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -182,18 +182,18 @@
 
           <!-- Article 3 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read Calculating Brick Quantities for a 4-Bedroom Duplex">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read Calculating Brick Quantities for a 4-Bedroom Duplex">
               <img class="journal-card__img" src="assets/image-web/south10.jpeg" alt="Calculating Brick Quantities for a 4-Bedroom Duplex" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">August 2026 • 5 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">Calculating Brick Quantities for a 4-Bedroom Duplex</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">Calculating Brick Quantities for a 4-Bedroom Duplex</a>
               </h3>
               <p class="journal-card__excerpt">
                 A step-by-step quantity takeoff guide: converting wall square meters into stretcher and header unit counts with realistic breakage allowances.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -202,18 +202,18 @@
 
           <!-- Article 4 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read English Bond vs Flemish Bond">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read English Bond vs Flemish Bond">
               <img class="journal-card__img" src="assets/image-web/south11.jpeg" alt="English Bond vs Flemish Bond in Bricklaying" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">July 2026 • 6 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">English Bond vs. Flemish Bond: Structural Strength vs. Facade Aesthetics</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">English Bond vs. Flemish Bond: Structural Strength vs. Facade Aesthetics</a>
               </h3>
               <p class="journal-card__excerpt">
                 Which masonry bonding pattern to specify for heavy perimeter security walls, double-skin cavities, and decorative residential facades.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -222,18 +222,18 @@
 
           <!-- Article 5 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read Combating Efflorescence in Tropical Brickwork">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read Combating Efflorescence in Tropical Brickwork">
               <img class="journal-card__img" src="assets/image-web/south12.jpeg" alt="Combating Efflorescence in Tropical Brickwork" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">June 2026 • 5 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">Combating Efflorescence &amp; Moisture in Tropical Brickwork</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">Combating Efflorescence &amp; Moisture in Tropical Brickwork</a>
               </h3>
               <p class="journal-card__excerpt">
                 How anti-efflorescence polymer mortars and silane hydrophobic impregnators prevent white salt stains and dampness during southern Nigeria's monsoon season.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -242,18 +242,18 @@
 
           <!-- Article 6 -->
           <article class="journal-card">
-            <a class="journal-card__thumb" href="contact.html#booking" aria-label="Read Exposed Brick Facade Cladding">
+            <a class="journal-card__thumb" href="contact.php#booking" aria-label="Read Exposed Brick Facade Cladding">
               <img class="journal-card__img" src="assets/image-web/south13.jpeg" alt="Exposed Brick Facade Cladding on Concrete Buildings" loading="lazy" />
             </a>
             <div class="journal-card__body">
               <span class="journal-card__date">May 2026 • 6 Min Read</span>
               <h3 class="journal-card__title">
-                <a href="contact.html#booking" style="color:inherit; text-decoration:none;">Exposed Brick Cladding: Transforming Existing Concrete Buildings</a>
+                <a href="contact.php#booking" style="color:inherit; text-decoration:none;">Exposed Brick Cladding: Transforming Existing Concrete Buildings</a>
               </h3>
               <p class="journal-card__excerpt">
                 How 20–30mm extruded terracotta brick slips and mechanical stainless ties give existing concrete structures a prestigious exposed brick appearance.
               </p>
-              <a class="btn btn--ghost" href="contact.html#booking" style="margin-top:auto; padding-left:0;">
+              <a class="btn btn--ghost" href="contact.php#booking" style="margin-top:auto; padding-left:0;">
                 <span>Read Full Guide</span>
                 <i data-lucide="arrow-right"></i>
               </a>
@@ -275,7 +275,7 @@
               <span>Editor's Engineering Feature</span>
             </span>
             <h2 class="h-section" style="margin-bottom:1.25rem;">
-              <a href="contact.html#booking" style="color:inherit; text-decoration:none;">The Masonry Renaissance: Why Pure Brick Architecture is Defining Modern Nigeria.</a>
+              <a href="contact.php#booking" style="color:inherit; text-decoration:none;">The Masonry Renaissance: Why Pure Brick Architecture is Defining Modern Nigeria.</a>
             </h2>
             <p class="lead" style="margin-bottom:1.5rem;">
               For decades, Nigerian construction relied on cheap sandcrete blocks coated with layers of plaster that peel after two rainy seasons. Today, visionary developers and diaspora homeowners are returning to pure brick masonry: honest, load-bearing, naturally cool, and indestructible.
@@ -287,18 +287,18 @@
               <span style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); display:block; margin-top:0.5rem;">— Chukwudi Zainco, Chief Masonry Engineer</span>
             </div>
             <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-              <a class="btn btn--primary" href="contact.html#booking">
+              <a class="btn btn--primary" href="contact.php#booking">
                 <span>Request Brick Supply Quote</span>
                 <i data-lucide="arrow-right"></i>
               </a>
-              <a class="btn btn--secondary" href="catalog.html">
+              <a class="btn btn--secondary" href="catalog.php">
                 <span>Explore Brick Catalog</span>
                 <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </div>
 
-          <a class="media-frame" href="catalog.html" style="aspect-ratio:4/4.5; display:block;" aria-label="Read Pure Brick Architecture in Owerri">
+          <a class="media-frame" href="catalog.php" style="aspect-ratio:4/4.5; display:block;" aria-label="Read Pure Brick Architecture in Owerri">
             <img src="assets/image-web/south1.jpeg" alt="Pure Brick Architecture in Owerri, Imo State" style="width:100%; height:100%; object-fit:cover;" />
           </a>
         </div>
@@ -327,7 +327,7 @@
                 <i data-lucide="download"></i>
                 <span>Request Handbook via WhatsApp</span>
               </a>
-              <a class="btn btn--secondary btn--lg" href="contact.html#booking">
+              <a class="btn btn--secondary btn--lg" href="contact.php#booking">
                 <span>Request Immediate Quote</span>
               </a>
             </div>
@@ -412,7 +412,7 @@
               Our masonry engineers regularly consult with property developers and diaspora builders across Nigeria. Let's analyze your drawings and calculate your exact brick requirements.
             </p>
             <div class="conversion-band__actions">
-              <a class="btn btn--glacier btn--lg" href="contact.html#booking">
+              <a class="btn btn--glacier btn--lg" href="contact.php#booking">
                 <span>Request Brick Supply Quote</span>
                 <i data-lucide="arrow-up-right"></i>
               </a>
@@ -436,7 +436,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.php">
             <img src="assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand__logo-img" style="height:52px;" />
           </a>
           <p class="text-muted" style="font-size:0.925rem; line-height: 1.65; max-width: 320px;">
@@ -481,24 +481,24 @@
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Brick Services</a></li>
-            <li><a href="catalog.html">Brick Catalog</a></li>
-            <li><a href="about.html">About Factory</a></li>
-            <li><a href="journal.html">Masonry Journal</a></li>
-            <li><a href="contact.html">Request Quote</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="services.php">Brick Services</a></li>
+            <li><a href="catalog.php">Brick Catalog</a></li>
+            <li><a href="about.php">About Factory</a></li>
+            <li><a href="journal.php">Masonry Journal</a></li>
+            <li><a href="contact.php">Request Quote</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Brick Capabilities</h4>
           <ul class="footer-links">
-            <li><a href="services.html#bulk-supply">Bulk Brick Supply</a></li>
-            <li><a href="services.html#masonry">Structural Masonry</a></li>
-            <li><a href="services.html#cladding">Exposed Brick Cladding</a></li>
-            <li><a href="services.html#perimeter">Perimeter Fencing &amp; Paving</a></li>
-            <li><a href="contact.html#booking">Diaspora Project Oversight</a></li>
-            <li><a href="journal.html">Technical Guides</a></li>
+            <li><a href="services.php#bulk-supply">Bulk Brick Supply</a></li>
+            <li><a href="services.php#masonry">Structural Masonry</a></li>
+            <li><a href="services.php#cladding">Exposed Brick Cladding</a></li>
+            <li><a href="services.php#perimeter">Perimeter Fencing &amp; Paving</a></li>
+            <li><a href="contact.php#booking">Diaspora Project Oversight</a></li>
+            <li><a href="journal.php">Technical Guides</a></li>
           </ul>
         </div>
 

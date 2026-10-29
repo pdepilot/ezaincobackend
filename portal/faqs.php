@@ -22,25 +22,25 @@
   <div class="workspace"><span class="workspace-dot"></span><div><b>Studio workspace</b><small>Interior design & architecture</small></div><i data-lucide="chevrons-up-down"></i></div>
   <nav class="nav" id="nav">
     <p class="nav-caption">OVERVIEW</p>
-    <a class="nav-link" href="dashboard.html" data-page="dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
-    <a class="nav-link" href="analytics.html" data-page="analytics"><i data-lucide="chart-no-axes-combined"></i><span>Analytics</span></a>
+    <a class="nav-link" href="dashboard.php" data-page="dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
+    <a class="nav-link" href="analytics.php" data-page="analytics"><i data-lucide="chart-no-axes-combined"></i><span>Analytics</span></a>
     <p class="nav-caption">STUDIO CONTENT</p>
-    <a class="nav-link" href="projects.html" data-page="projects"><i data-lucide="panels-top-left"></i><span>Projects & Portfolio</span><em id="count-projects">0</em></a>
-    <a class="nav-link" href="journal.html" data-page="journal"><i data-lucide="notebook-pen"></i><span>Journal / Blog</span></a>
-    <a class="nav-link" href="services.html" data-page="services"><i data-lucide="armchair"></i><span>Services</span></a>
-    <a class="nav-link" href="pages.html" data-page="pages"><i data-lucide="files"></i><span>Website Pages</span></a>
-    <a class="nav-link" href="homepage.html" data-page="homepage"><i data-lucide="panorama"></i><span>Homepage & Hero</span></a>
+    <a class="nav-link" href="projects.php" data-page="projects"><i data-lucide="panels-top-left"></i><span>Projects & Portfolio</span><em id="count-projects">0</em></a>
+    <a class="nav-link" href="journal.php" data-page="journal"><i data-lucide="notebook-pen"></i><span>Journal / Blog</span></a>
+    <a class="nav-link" href="services.php" data-page="services"><i data-lucide="armchair"></i><span>Services</span></a>
+    <a class="nav-link" href="pages.php" data-page="pages"><i data-lucide="files"></i><span>Website Pages</span></a>
+    <a class="nav-link" href="homepage.php" data-page="homepage"><i data-lucide="panorama"></i><span>Homepage & Hero</span></a>
     <p class="nav-caption">CLIENT EXPERIENCE</p>
-    <a class="nav-link" href="consultations.html" data-page="consultations"><i data-lucide="calendar-check"></i><span>Consultations</span><em id="count-consultations">0</em></a>
-    <a class="nav-link" href="boq.html" data-page="boq"><i data-lucide="clipboard-list"></i><span>Project briefs / BOQ</span></a>
-    <a class="nav-link" href="team.html" data-page="team"><i data-lucide="users"></i><span>Team</span></a>
-    <a class="nav-link" href="testimonials.html" data-page="testimonials"><i data-lucide="message-square-quote"></i><span>Testimonials</span></a>
-    <a class="nav-link active" href="faqs.html" data-page="faqs"><i data-lucide="circle-help"></i><span>FAQs</span></a>
-    <a class="nav-link" href="materials.html" data-page="materials"><i data-lucide="layers"></i><span>Materials library</span></a>
-    <a class="nav-link" href="whatsapp.html" data-page="whatsapp"><i data-lucide="messages-square"></i><span>WhatsApp enquiries</span></a>
+    <a class="nav-link" href="consultations.php" data-page="consultations"><i data-lucide="calendar-check"></i><span>Consultations</span><em id="count-consultations">0</em></a>
+    <a class="nav-link" href="boq.php" data-page="boq"><i data-lucide="clipboard-list"></i><span>Project briefs / BOQ</span></a>
+    <a class="nav-link" href="team.php" data-page="team"><i data-lucide="users"></i><span>Team</span></a>
+    <a class="nav-link" href="testimonials.php" data-page="testimonials"><i data-lucide="message-square-quote"></i><span>Testimonials</span></a>
+    <a class="nav-link active" href="faqs.php" data-page="faqs"><i data-lucide="circle-help"></i><span>FAQs</span></a>
+    <a class="nav-link" href="materials.php" data-page="materials"><i data-lucide="layers"></i><span>Materials library</span></a>
+    <a class="nav-link" href="whatsapp.php" data-page="whatsapp"><i data-lucide="messages-square"></i><span>WhatsApp enquiries</span></a>
     <p class="nav-caption">WORKSPACE</p>
-    <a class="nav-link" href="profile.html" data-page="profile"><i data-lucide="user-round"></i><span>Admin profile</span></a>
-    <a class="nav-link" href="settings.html" data-page="settings"><i data-lucide="settings-2"></i><span>Settings</span></a>
+    <a class="nav-link" href="profile.php" data-page="profile"><i data-lucide="user-round"></i><span>Admin profile</span></a>
+    <a class="nav-link" href="settings.php" data-page="settings"><i data-lucide="settings-2"></i><span>Settings</span></a>
   </nav>
   <div class="sidebar-bottom"><div class="help-card"><span class="help-icon"><i data-lucide="life-buoy"></i></span><div><b>Need a hand?</b><small>View the setup guide</small></div><button class="icon-btn" id="helpBtn" aria-label="Setup guide"><i data-lucide="arrow-up-right"></i></button></div><div class="admin-mini"><div class="avatar">PJ</div><div class="admin-meta"><b id="sideAdminName">Studio Admin</b><small>Administrator</small></div><button class="icon-btn" id="profileShortcut" aria-label="Profile"><i data-lucide="ellipsis"></i></button></div></div>
 </aside>

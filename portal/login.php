@@ -95,7 +95,7 @@
       
       <!-- Top Action Navigation -->
       <nav class="form-header-nav" aria-label="Portal Navigation">
-        <a href="../index.html" class="nav-back-link" title="Return to public website">
+        <a href="../index.php" class="nav-back-link" title="Return to public website">
           <i data-lucide="arrow-left"></i>
           <span>Return to Website</span>
         </a>
