@@ -5,24 +5,36 @@
 'use strict';
 const $ = (s, root=document) => root.querySelector(s);
 const $$ = (s, root=document) => [...root.querySelectorAll(s)];
-const KEY = 'brists_atelier_cms_v1';
+const KEY = 'ezainco_brick_portal_cms_v2';
+
+function resolveImgUrl(url, idx = 0){
+ if(!url || typeof url !== 'string' || url.trim() === '') return `../assets/image-web/south${(idx % 13) + 1}.jpeg`;
+ if(url.includes('.avif')) return `../assets/image-web/south${(idx % 13) + 1}.jpeg`;
+ if(url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) return url;
+ if(url.startsWith('assets/')) return '../' + url;
+ if(url.startsWith('../assets/')) return url;
+ if(!url.startsWith('../') && !url.startsWith('/')) return '../assets/image-web/' + url;
+ return url;
+}
+
+let projectsViewMode = 'table';
 
 const sections = {
  projects:{
   title:'Projects & Catalog',
-  desc:'Curate completed spaces, case studies and project imagery as featured on the BRISTS website.',
+  desc:'Curate completed architectural masonry spaces, client case studies, and pure brick photography for E-ZAINCO BRICK.',
   singular:'project',
   icon:'panels-top-left',
   fields:[
    ['title','Project title','text',true],
-   ['category','Project category','select',true,['Residential','Commercial','Hospitality','Bespoke Styling','Kitchen & Bath','Office','Renovation']],
-   ['location','Location / City (e.g. Ikenegbu, Owerri)','text',false],
+   ['category','Project category','select',true,['Residential Architecture','Commercial Masonry','Civic & Cultural Masonry','Ecclesiastical Masonry','Industrial Facility','Landscape & Pavers','Structural Masonry','Housing Development','Civil Infrastructure']],
+   ['location','Location / City (e.g. New Owerri, Imo State)','text',false],
    ['client','Client / Scope (e.g. Private Luxury Residence)','text',false],
    ['year','Completion Year / Status (e.g. 2026, Completed)','text',false],
    ['image','Cover image URL / Upload','image',true],
-   ['beforeImage','Before / Transformation image URL / Upload','image',false],
+   ['beforeImage','Before / Foundation image URL / Upload','image',false],
    ['gallery','Additional gallery image links (comma separated)','text',false],
-   ['features','Key deliverables & highlights (e.g. Fluted Walnut Panelling, Ambient Cove LEDs)','text',false],
+   ['features','Key deliverables & highlights (e.g. 12.0 MPa Facing Brick, Flemish Bond Masonry)','text',false],
    ['description','Project summary & architectural concept','textarea',true],
    ['status','Visibility on website','select',true,['Published','Featured','Draft','Archived']]
   ]
@@ -178,82 +190,91 @@ const sections = {
 
 const seed = {
  projects:[
-  {id:'p1',title:'The Civic Penthouse',category:'Residential',location:'Ikenegbu, Owerri',client:'Private Luxury Residence',year:'2026',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',beforeImage:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',features:'Fluted Walnut Panelling, Ambient Cove Lighting, Panoramic Balcony',description:'Complete penthouse architectural fit-out balancing expansive daylight with tactile botanical luxury.',status:'Published'},
-  {id:'p2',title:'Sanctuary Master Retreat',category:'Residential',location:'New Owerri',client:'Private Villa',year:'2026',image:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',features:'Acoustic Headboard Wall, Integrated Walk-In Robe, Warm Brass Hardware',description:'A serene master bedroom suite designed with soothing celadon palettes and tailored Italian textiles.',status:'Published'},
-  {id:'p3',title:'Monochrome Quartz Kitchen',category:'Kitchen & Bath',location:'Works Layout, Owerri',client:'Family Residence',year:'2025',image:'../assets/image-web/photo-1704040686413-2c607dbd2f06.avif',features:'Waterfall Calacatta Quartz Island, Handleless Matte Black Cabinetry',description:'High-performance culinary workspace crafted with seamless quartz surfaces and concealed ambient task lighting.',status:'Published'},
-  {id:'p4',title:'Aura Law Chambers',category:'Commercial',location:'Victoria Island, Lagos',client:'Commercial Firm',year:'2025',image:'../assets/image-web/premium_photo-1661879252375-7c1db1932572.avif',features:'Executive Boardroom Acoustics, Fluted Glass Partitions, Bespoke Conference Table',description:'Prestigious corporate chambers combining acoustic privacy with authoritative architectural presence.',status:'Published'},
-  {id:'p5',title:'Nordic Minimalist Villa',category:'Residential',location:'Port Harcourt, Rivers State',client:'Private Villa',year:'2025',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',features:'Open-Concept Living, Natural White Oak Joinery, Low-VOC Mineral Washes',description:'Light-filled residence emphasizing clean lines, functional geometry and organic textures.',status:'Draft'}
+  {id:'p1',title:'The Civic Brick Residence',category:'Residential Architecture',location:'New Owerri, Imo State',client:'Chief I. Nwachukwu',year:'2026',image:'../assets/image-web/south1.jpeg',features:'12.0 MPa Facing Brick, Flemish Bond Masonry, Natural Thermal Insulation, Zero Plaster',description:'A private luxury residential duplex requiring superior thermal comfort, zero wall painting maintenance, and exposed facing brickwork.',status:'Published'},
+  {id:'p2',title:'Sanctuary Brick Villa',category:'Residential Architecture',location:'Ikenegbu, Owerri',client:'Private Family Villa',year:'2026',image:'../assets/image-web/south2.jpeg',features:'11.5 MPa Compressed Earth Brick, Architectural Sills, Deep Overhangs, Climate-Optimized Courtyard',description:'Contemporary tropical villa built entirely with high-density stabilized earth bricks, creating natural temperature regulation and timeless texture.',status:'Published'},
+  {id:'p3',title:'Monochrome Structural Kitchen & Masonry Core',category:'Residential Masonry',location:'Works Layout, Owerri',client:'Executive Estate',year:'2025',image:'../assets/image-web/south3.jpeg',features:'Exposed Terracotta Brick Spine, Load-Bearing Piers, Fire-Resistant Kiln Bricks',description:'High-load masonry columns and architectural brick feature walls integrated with modern stone kitchen cabinetry and vaulted ceilings.',status:'Published'},
+  {id:'p4',title:'Aura Commercial Chambers',category:'Commercial Masonry',location:'Victoria Island, Lagos',client:'Corporate Legal Firm',year:'2025',image:'../assets/image-web/south4.jpeg',features:'Sound-Attenuating Solid Bricks, Acoustic Pier Buffers, Low Carbon Footprint, Polished Pointing',description:'Prestigious corporate headquarters designed with acoustic brick partitions and authoritative architectural facades.',status:'Published'},
+  {id:'p5',title:'Nordic Minimalist Brick Villa',category:'Residential Architecture',location:'Port Harcourt, Rivers State',client:'Private Executive Residence',year:'2025',image:'../assets/image-web/south5.jpeg',features:'Monolithic Masonry, Flemish Header Accents, High Compressive Earth Blocks',description:'Clean-lined architectural duplex celebrating earth masonry with large glass apertures and climate-adaptive ventilation.',status:'Published'},
+  {id:'p6',title:'The Terrace Brick Compound',category:'Housing Development',location:'Enugu, Enugu State',client:'Residential Development Group',year:'2025',image:'../assets/image-web/south6.jpeg',features:'Uniform Density Interlocking Bricks, Cost-Effective Dry-Stack Joints, Rapid Build Schedule',description:'Gated residential terrace development constructed with precision hydraulic interlocking blocks for lifetime structural durability.',status:'Published'},
+  {id:'p7',title:'Victoria Island Contemporary Brick Villa',category:'Contemporary Architecture',location:'Victoria Island, Lagos',client:'High Net-Worth Client',year:'2026',image:'../assets/image-web/south7.jpeg',features:'Premium Face Bricks, Architectural Lintels, Thermal Mass Walls',description:'High-end waterfront property showcasing brick craftsmanship, expansive verandas, and natural earthen aesthetics.',status:'Published'},
+  {id:'p8',title:'E-ZAINCO Automated Block & Paver Facility',category:'Industrial Facility',location:'Owerri Industrial Layout, Imo State',client:'E-ZAINCO Industrial Core',year:'2026',image:'../assets/image-web/south8.jpeg',features:'Heavy-Duty Paving Blocks, Industrial Retaining Walls, Hydraulic Compaction',description:'Our primary production plant demonstrating maximum load capacity masonry and automated interlocking paver yard.',status:'Published'},
+  {id:'p9',title:'Royal Heritage Courtyard & Pavings',category:'Landscape & Pavers',location:'Port Harcourt, Rivers State',client:'Royal Estate & Event Grounds',year:'2025',image:'../assets/image-web/south9.jpeg',features:'Heavy-Traffic Interlocking Pavers, Permeable Drainage, Weather-Resistant Pigment',description:'Extensive exterior landscape paving with high-density compressed pavers engineered to support heavy vehicle loads without subsidence.',status:'Published'},
+  {id:'p10',title:'South Gate Architectural Arch & Piers',category:'Structural Masonry',location:'Umuahia, Abia State',client:'Civic Gate Project',year:'2025',image:'../assets/image-web/south10.jpeg',features:'Engineered Arch Masonry, High-Strength Red Brick, Anti-Efflorescence Mortar',description:'Grand entry portal featuring true structural masonry arches and fluted pilasters celebrating classical brick geometry.',status:'Published'},
+  {id:'p11',title:'Modern Flemish Bond Duplex',category:'Residential Masonry',location:'Ikenegbu, Owerri',client:'Private Villa',year:'2026',image:'../assets/image-web/south11.jpeg',features:'Classic Flemish Bond, Integrated Planter Boxes, Natural Earth Tone Palette',description:'Two-story duplex built with alternating stretchers and headers, providing unmatched shear strength and textural depth.',status:'Published'},
+  {id:'p12',title:'High-Load Brick Retaining Wall & Drainage',category:'Civil Infrastructure',location:'Awka, Anambra State',client:'State Infrastructure Partner',year:'2025',image:'../assets/image-web/south12.jpeg',features:'15.0 MPa Solid Engineering Bricks, Weep Hole Drainage, Erosion Prevention',description:'Steep slope stabilization using interlocking reinforced solid bricks to permanently safeguard hillside foundations.',status:'Published'},
+  {id:'p13',title:'Precision Hydraform Interlocking Estate',category:'Housing Development',location:'Enugu, Enugu State',client:'Affordable Luxury Housing Scheme',year:'2026',image:'../assets/image-web/south13.jpeg',features:'Hydraulic Interlocking Earth Blocks, Zero Mortar Vertical Joints, 30% Cost Efficiency',description:'Eco-friendly housing estate delivering rapid construction speed, optimal thermal insulation, and exceptional earthquake/shear resistance.',status:'Published'}
  ],
  journal:[
-  {id:'j1',title:'How to Plan an Interior Design Project in Owerri',slug:'blog-post/blog-how-to-plan-interior-design-project-owerri.php',category:'Design Advice',author:'Arc. Chinedu Brist',date:'October 2026',readTime:'6 Min Read',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',excerpt:'Why bringing an interior architect onboard during the early blockwork and lintel stage saves millions of naira in conduit re-channelling and ceiling rework.',content:'Planning an interior architecture project in Nigeria requires proactive coordination between structural engineers, MEP artisans, and finish specialists. Early spatial zoning prevents costly electrical re-routing and ensures every joinery piece sits seamlessly against finished walls.',tags:'Space Planning, Budgeting, Architecture',status:'Published'},
-  {id:'j2',title:'Choosing Finishes for the Tropical Nigerian Climate',slug:'journal.php#tropical-finishes',category:'Materials & Finishes',author:'BRISTS Materials Lab',date:'September 2026',readTime:'5 Min Read',image:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80',excerpt:'Selecting moisture-resistant veneers, anti-fungal emulsion paints and thermal-efficient flooring that withstand seasonal humidity.',content:'The high humidity and temperature variations of southeastern Nigeria demand intentional material choices: sealed marine-grade ply substrates, sintered stone vanity tops, and breathable linen upholstery that retains its tactile richness over decades.',tags:'Materials, Climate, Luxury Finishes',status:'Published'}
+  {id:'j1',title:'Why Masonry Architecture Outlasts Painted Render in Tropical Nigeria',slug:'journal.php#masonry-durability',category:'Materials & Finishes',author:'Engr. Chukwudi Zainco',date:'October 2026',readTime:'5 Min Read',image:'../assets/image-web/south1.jpeg',excerpt:'Continuous rainfall and humidity degrade exterior paint within months. Discover how high-density compressed facing bricks provide permanent color and zero wall maintenance.',content:'Compressed stabilized earth and kiln-fired clay bricks form a dense crystalline matrix resistant to moisture absorption and biological growth. Flemish bond pointing channels water away cleanly.',tags:'Masonry, Thermal Comfort, Durability',status:'Published'},
+  {id:'j2',title:'Compressive Strength Standards for Solid Earth Masonry (NIS 87)',slug:'journal.php#nis87-standards',category:'Structural Standards',author:'E-ZAINCO Quality Control Lab',date:'September 2026',readTime:'6 Min Read',image:'../assets/image-web/south8.jpeg',excerpt:'How our 12.5 MPa hydraulic compression protocol exceeds standard load-bearing block requirements across residential and commercial developments.',content:'By balancing local red laterite with 7-9% Portland cement and compaction pressures exceeding 150 bar, each E-ZAINCO brick achieves uniform density and superior thermal lag.',tags:'Engineering, Compressive Strength, NIS 87',status:'Published'}
  ],
  services:[
-  {id:'s1',title:'Residential Interior Design',category:'Residential',badge:'Turnkey Luxury',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',deliverables:'3D Renders, Space Planning, Custom Joinery, Material Schedule, Procurement',timeline:'6–10 Weeks',description:'Complete design transformation for duplexes, penthouses, and private villas with bespoke cabinetry and curated lighting.',status:'Published'},
-  {id:'s2',title:'Commercial & Corporate Workspaces',category:'Commercial',badge:'Corporate Architecture',image:'../assets/image-web/premium_photo-1661879252375-7c1db1932572.avif',deliverables:'Acoustic Layouts, Executive Offices, Boardroom AV Integration, Ergonomic Furnishing',timeline:'4–8 Weeks',description:'Purposeful workplaces designed to elevate client impressions, enhance team productivity and express brand identity.',status:'Published'},
-  {id:'s3',title:'Bespoke Furniture & Joinery',category:'Bespoke Styling',badge:'Artisanal Craft',image:'../assets/image-web/photo-1758448755952-42b404bc6f39.avif',deliverables:'Custom Wardrobes, Kitchen Islands, Media Consoles, Architectural Panelling',timeline:'3–5 Weeks',description:'Custom-crafted millwork and artisanal furnishings precision-built to exact architectural specifications.',status:'Published'},
-  {id:'s4',title:'Turnkey Fit-Out & Project Supervision',category:'Turnkey Fit-Out',badge:'Full-Service Execution',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',deliverables:'Site Supervision, Subcontractor Quality Control, Milestone Reporting, White-Glove Handover',timeline:'8–16 Weeks',description:'End-to-end site management ensuring design intent, structural integrity, and flawless execution from slab to styling.',status:'Published'}
+  {id:'s1',title:'Compressed Earth & Facing Brick Supply',category:'Brick Manufacturing',badge:'Factory Direct',image:'../assets/image-web/south1.jpeg',deliverables:'12.0 MPa Solid Bricks, Interlocking Hydraform Blocks, Architectural Facing Bricks, Pallet Delivery',timeline:'2–4 Days Batch Dispatch',description:'Direct factory supply of certified solid and interlocking bricks delivered to project sites nationwide with quality test certificates.',status:'Published'},
+  {id:'s2',title:'Master Bricklaying & Flemish Bond Masonry',category:'Site Execution',badge:'Certified Artisans',image:'../assets/image-web/south2.jpeg',deliverables:'Site Supervision, Flemish & English Bond Masonry, Concave Rake Pointing, Lintel Engineering',timeline:'Custom Project Schedule',description:'Professional masonry execution by certified bricklayers ensuring precise course alignment, structural bonds, and immaculate joints.',status:'Published'},
+  {id:'s3',title:'Interlocking Paving & Courtyard Construction',category:'Hardscaping & Paving',badge:'Heavy Traffic',image:'../assets/image-web/south9.jpeg',deliverables:'Sub-Base Compaction, Heavy-Duty Pavers, Permeable Sand Beds, Drainage Kerbs',timeline:'1–3 Weeks',description:'Precision engineered exterior driveways, pedestrian walkways, and estate courtyards designed for zero sinking and maximum axle loads.',status:'Published'},
+  {id:'s4',title:'Architectural Brick Consultation & BOQ Takeoff',category:'Technical Support',badge:'Free Estimate',image:'../assets/image-web/south4.jpeg',deliverables:'Brick Quantity Estimation, Thermal Mass Calculations, Structural Wall Detailing, Cost Comparison',timeline:'24–48 Hours',description:'Complete quantity surveyor takeoff calculating exact brick counts, mortar requirements, and cost savings vs plaster & paint.',status:'Published'}
  ],
  pages:[
-  {id:'pg1',title:'Home',slug:'index.php',heroEyebrow:'BRISTS INTERIOR DESIGN',heroTitle:'Spaces designed around the way you live',image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',description:'Thoughtful interiors, refined finishes and purposeful design for spaces that feel distinctly yours.',seoTitle:'BRISTS Interior Design | Luxury Spaces in Owerri & Lagos',seoDescription:'Award-winning interior architecture, bespoke styling and full turnkey execution in southeastern Nigeria.',status:'Published'},
-  {id:'pg2',title:'Services',slug:'services.php',heroEyebrow:'Tailored Capabilities',heroTitle:'End-to-End Interior Architecture & Styling',image:'../assets/image-web/photo-1598928506311-c55ded91a20c.avif',description:'From initial structural zoning to bespoke furnishing and white-glove handover.',seoTitle:'Services | BRISTS Interior Architecture',seoDescription:'Residential, commercial, bespoke styling and turnkey fit-out capabilities.',status:'Published'},
-  {id:'pg3',title:'Catalog',slug:'catalog.php',heroEyebrow:'Selected Works',heroTitle:'Curated Spaces & Recent Case Studies',image:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',description:'Explore our signature completed projects across Owerri, Lagos, and southeastern Nigeria.',seoTitle:'Catalog | BRISTS Interior Design',seoDescription:'Explore signature residential and commercial projects by BRISTS.',status:'Published'},
-  {id:'pg4',title:'About',slug:'about.php',heroEyebrow:'The Studio Atelier',heroTitle:'Architectural Rigour Meets Botanical Luxury',image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',description:'The philosophy, leadership team, and craft standards behind BRISTS.',seoTitle:'About Us | BRISTS Interior Design Studio',seoDescription:'Meet the team and architectural principles defining BRISTS.',status:'Published'},
-  {id:'pg5',title:'Journal',slug:'journal.php',heroEyebrow:'Studio Chronicles',heroTitle:'Insights on Interior Architecture & Living',image:'../assets/image-web/photo-1699239116624-85268dce7377.avif',description:'Practical guidance, material spotlights and studio perspectives.',seoTitle:'The Journal | BRISTS Interior Design',seoDescription:'Design advice and project stories from the BRISTS atelier.',status:'Published'},
-  {id:'pg6',title:'Contact',slug:'contact.php',heroEyebrow:'Studio Consultations',heroTitle:'Begin Your Space Transformation',image:'../assets/image-web/premium_photo-1661879252375-7c1db1932572.avif',description:'Book an on-site or digital consultation with our lead interior architects.',seoTitle:'Contact & Consultations | BRISTS Atelier',seoDescription:'Book a consultation or reach the BRISTS design studio in Owerri.',status:'Published'}
+  {id:'pg1',title:'Home',slug:'index.php',heroEyebrow:'E-ZAINCO BRICK NIGERIA',heroTitle:'Building Strength. Creating Legacy.',image:'../assets/image-web/south1.jpeg',description:'Premium compressed earth bricks, architectural facing masonry, and heavy-duty interlocking pavers engineered in Owerri, Imo State.',seoTitle:'E-ZAINCO BRICK | High-Density Solid & Interlocking Bricks',seoDescription:'High-density 12.5 MPa solid earth bricks, facing masonry, and interlocking pavers delivered across Nigeria.',status:'Published'},
+  {id:'pg2',title:'Catalog',slug:'catalog.php',heroEyebrow:'Our Work in Pictures',heroTitle:'Built With Strength. Mastered in Masonry.',image:'../assets/image-web/south2.jpeg',description:'Explore completed residences, commercial complexes, and civic masonry landmarks engineered with E-ZAINCO bricks.',seoTitle:'Catalog | E-ZAINCO BRICK Nigeria',seoDescription:'Browse architectural masonry case studies, residential duplexes, and commercial brick facades.',status:'Published'},
+  {id:'pg3',title:'Services',slug:'services.php',heroEyebrow:'Capabilities & Supply',heroTitle:'Factory Production & Master Masonry',image:'../assets/image-web/south3.jpeg',description:'From automated high-pressure brick manufacturing to on-site master laying and turn-key compound paving.',seoTitle:'Services & Supply | E-ZAINCO BRICK',seoDescription:'Brick supply, interlocking paver installation, and certified masonry contracting across Nigeria.',status:'Published'},
+  {id:'pg4',title:'About Us',slug:'about.php',heroEyebrow:'The E-ZAINCO Standard',heroTitle:'Engineering Permanent Masonry Since Inception',image:'../assets/image-web/south8.jpeg',description:'Our mission, hydraulic plant technology, and certified 12.5 MPa compressive strength standards.',seoTitle:'About Us | E-ZAINCO BRICK Nigeria Ltd.',seoDescription:'Leading hydraulic brick and interlocking paver manufacturer in Owerri, Imo State.',status:'Published'},
+  {id:'pg5',title:'Contact & Consultations',slug:'contact.php',heroEyebrow:'Factory Enquiries',heroTitle:'Request a Brick BOQ or Site Consultation',image:'../assets/image-web/south4.jpeg',description:'Reach our technical team for wholesale pricing, sample delivery, and project quantity calculations.',seoTitle:'Contact | E-ZAINCO BRICK Owerri',seoDescription:'Contact E-ZAINCO BRICK at Suite 11, Municipal Plaza, Ikenegbu, Owerri, Imo State.',status:'Published'}
  ],
  consultations:[
-  {id:'c1',title:'Adaobi N.',email:'adaobi@example.com',phone:'+234 803 000 0011',category:'Residential',description:'Four-bedroom duplex renovation and bespoke open-plan living room redesign.',status:'New',created:'Today'},
-  {id:'c2',title:'Emeka O.',email:'emeka@example.com',phone:'+234 806 000 0022',category:'Commercial',description:'Reception, client lounge and private executive boardroom fit-out.',status:'Scheduled',created:'Yesterday'},
-  {id:'c3',title:'Studio Kora',email:'hello@example.com',phone:'+234 701 000 0033',category:'Office',description:'Acoustic ceiling zoning and ergonomic workspace planning for 14-person team.',status:'Contacted',created:'Oct 10'}
+  {id:'c1',title:'Engr. Peter Obioma',email:'peter.obioma@example.com',phone:'+234 803 234 5678',category:'Residential Duplex',description:'Requires 22,000 facing bricks for a 5-bedroom duplex in New Owerri. Wants Flemish bond laying consultation.',status:'New',created:'Today'},
+  {id:'c2',title:'Arc. Chinonso Eke',email:'eke.architecture@example.com',phone:'+234 806 876 5432',category:'Commercial Facade',description:'BOQ review for exterior brick cladding on a 3-storey office building along Port Harcourt Road.',status:'Scheduled',created:'Yesterday'},
+  {id:'c3',title:'Chief Kenneth Nwosu',email:'knwosu@example.com',phone:'+234 701 345 6789',category:'Estate Perimeter Wall',description:'Supply of 45,000 heavy-load interlocking blocks for estate security wall in Enugu.',status:'Contacted',created:'Oct 25'}
  ],
  boq:[
-  {id:'b1',title:'A. Okafor Residence',email:'client@example.com',category:'Materials estimate',budget:'₦15m–₦22m',description:'Preliminary estimate for master retreat, walk-in closet and chef kitchen cabinetry.',status:'Reviewing'}
+  {id:'b1',title:'A. Okafor Residence',email:'client@example.com',category:'Facing brick takeoff',budget:'₦8.5m',description:'Preliminary estimate for exterior cladding, perimeter walling, and courtyard interlocking pavers.',status:'Reviewing'}
  ],
  team:[
-  {id:'t1',title:'Arc. Chinedu Brist',category:'Lead Interior Architect & Founder',image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',specialities:'Interior Architecture, Spatial Zoning, Luxury Residential',email:'chinedu@brists.design',phone:'+234 701 409 3037',description:'Over 12 years engineering high-end residential estates and executive spaces across southeastern Nigeria and Lagos.',status:'Published'},
-  {id:'t2',title:'Amaka Nnamdi',category:'Senior Interior Designer & Styling Lead',image:'../assets/image-web/photo-1758448755952-42b404bc6f39.avif',specialities:'Material Curation, Botanical Accents, Lighting Design',email:'amaka@brists.design',phone:'+234 803 111 2233',description:'Passionate about sensory materiality, biophilic palettes and custom upholstery that evoke warmth and understated prestige.',status:'Published'}
+  {id:'t1',title:'Engr. Chukwudi Zainco',category:'Managing Director & Lead Engineer',image:'../assets/image-web/south1.jpeg',specialities:'Hydraulic Compaction, Soil Mechanics, NIS 87 Standards',email:'director@ezaincobrick.com',phone:'+234 815 327 8764',description:'Over 15 years pioneering stabilized earth architecture and precision kiln brick manufacturing in southeastern Nigeria.',status:'Published'},
+  {id:'t2',title:'Arc. Ifeanyi Okoli',category:'Head of Architectural Design & Site Supervision',image:'../assets/image-web/south2.jpeg',specialities:'Flemish & English Bonds, Lintel Details, Thermal Insulation',email:'masonry@ezaincobrick.com',phone:'+234 902 239 5340',description:'Specialist in bioclimatic building design and structural masonry facades that withstand high seasonal rainfall.',status:'Published'}
  ],
  testimonials:[
-  {id:'te1',title:'Chief & Lolo Iwuanyanwu',category:'Residential Penthouse',image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',description:'BRISTS transformed our bare penthouse shell into an extraordinary sanctuary. Every joinery joint is immaculate and the lighting creates a calm, hotel-like atmosphere every evening.',status:'Published'},
-  {id:'te2',title:'Barrister K. Adeleke',category:'Corporate Law Suite',description:'The acoustic zoning in our boardroom is flawless. BRISTS understood our standard of discretion and delivered a space that our clients continuously admire.',status:'Published'}
+  {id:'te1',title:'Chief I. Nwachukwu',category:'Residential Client, New Owerri',image:'../assets/image-web/south1.jpeg',description:'The house stays naturally cool even during peak 34°C tropical heat. Zero painting or plastering maintenance forever. E-ZAINCO bricks are in a class of their own.',status:'Published'},
+  {id:'te2',title:'Engr. Dave Mbachu',category:'Project Contractor, Enugu',image:'../assets/image-web/south6.jpeg',description:'We tested their bricks in the civil engineering lab at UNN: 12.8 MPa average compressive strength. Clean edges, uniform density, and on-time site dispatch.',status:'Published'}
  ],
  faqs:[
-  {id:'f1',title:'At what stage should we engage an interior architect?',category:'Getting started',description:'Ideally during the architectural planning or early blockwork stage. Bringing us onboard before electrical conduits and plumbing sleeves are cast saves significant time and prevents costly ceiling rework.',status:'Published'},
-  {id:'f2',title:'Do you manage site fit-out and contractor execution outside Owerri?',category:'Service area',description:'Yes. We manage turnkey residential and corporate fit-outs across Owerri, Port Harcourt, Enugu, Asaba, and Lagos with structured milestone supervision.',status:'Published'}
+  {id:'f1',title:'Do E-ZAINCO bricks require exterior plaster or painting?',category:'Durability',description:'No! Our bricks are formulated and hydraulically compressed to be exposed permanently. They naturally resist water, weathering, and UV degradation, eliminating recurring painting costs for life.',status:'Published'},
+  {id:'f2',title:'What is the compressive strength of your solid earth bricks?',category:'Technical Specs',description:'Our standard compressed earth bricks achieve 11.5 to 12.5 MPa, significantly exceeding standard 9-inch sandcrete blocks which typically range between 2.5 and 3.5 MPa.',status:'Published'},
+  {id:'f3',title:'Do you deliver bricks outside Imo State?',category:'Logistics',description:'Yes. We coordinate articulated flatbed truck deliveries directly to project sites across Enugu, Abia, Anambra, Rivers, Delta, Lagos, and Abuja with secure strapping.',status:'Published'}
  ],
  materials:[
-  {id:'m1',title:'Fluted Natural Oak Veneer',category:'Furniture',image:'../assets/image-web/premium_photo-1661964402307-02267d1423f5.avif',description:'Architectural fluted wall panelling with matte polyurethane finish.',status:'Available'},
-  {id:'m2',title:'Calacatta Oro Quartz',category:'Wall finish',image:'../assets/image-web/photo-1704040686413-2c607dbd2f06.avif',description:'Seamless, non-porous waterfall island surface with subtle gold veining.',status:'Available'}
+  {id:'m1',title:'Standard Red Facing Brick (230 x 110 x 75 mm)',category:'Facing Brick',image:'../assets/image-web/south1.jpeg',description:'High-density clay facing brick compressed at 12 MPa with natural terracotta tone and water-repellent finish.',status:'Available'},
+  {id:'m2',title:'Hydraform Interlocking Block (220 x 220 x 115 mm)',category:'Interlocking Block',image:'../assets/image-web/south13.jpeg',description:'Precision tongue-and-groove compressed earth block allowing dry-stack masonry with minimal mortar.',status:'Available'},
+  {id:'m3',title:'Heavy-Duty Driveway Paver (200 x 100 x 60 mm)',category:'Interlocking Paver',image:'../assets/image-web/south9.jpeg',description:'Solid high-compaction paver designed for heavy vehicle loads, car parks, and compound courtyards.',status:'Available'}
  ],
  whatsapp:[
-  {id:'w1',title:'Dr. Obinna',phone:'+234 803 445 6677',category:'Interior design',description:'Inquired about complete turnkey interior architecture for a newly constructed villa in Owerri.',status:'New'}
+  {id:'w1',title:'Dr. Obinna E.',phone:'+234 803 445 6677',category:'Brick purchase',description:'Inquired about 18,000 facing bricks for a new hospital annex project in Owerri.',status:'New'}
  ],
  homepage:{
-  eyebrow:'BRISTS INTERIOR DESIGN',
-  title:'Spaces designed around the way you live',
-  description:'Thoughtful interiors, refined finishes and purposeful design for spaces that feel distinctly yours.',
-  buttonText:'Book Consultation',
-  buttonLink:'contact.php#booking',
+  eyebrow:'E-ZAINCO BRICK NIGERIA',
+  title:'Building Strength. Creating Legacy.',
+  description:'Engineered solid earth & clay masonry with 12.5 MPa compressive strength. Natural thermal comfort, zero wall painting, and permanent structural elegance.',
+  buttonText:'Request BOQ & Pricing',
+  buttonLink:'contact.php#quote',
   secondaryButtonText:'Explore Catalog',
   secondaryButtonLink:'catalog.php',
-  image:'../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif',
-  image2:'../assets/image-web/photo-1616594039964-ae9021a400a0.avif',
-  image3:'../assets/image-web/photo-1704040686413-2c607dbd2f06.avif',
-  trust1:'140+ Spaces Delivered',
-  trust2:'100% On-Time Handover',
-  trust3:'Owerri & Lagos Ateliers',
+  image:'../assets/image-web/south1.jpeg',
+  image2:'../assets/image-web/south2.jpeg',
+  image3:'../assets/image-web/south3.jpeg',
+  trust1:'140+ Projects Delivered',
+  trust2:'12.5 MPa Tested Strength',
+  trust3:'Owerri Production Core',
   status:'Published'
  },
  profile:{
-  name:'Arc. Chinedu Brist',
-  role:'Principal Architect & Studio Director',
-  email:'chinedu@brists.design',
-  phone:'+234 701 409 3037',
-  image:'../assets/image-web/photo-1757344454333-cc666252e596.avif',
-  initials:'CB',
-  location:'Ikenegbu Atelier, Owerri',
-  bio:'Directing spatial architecture, interior acoustics and bespoke furniture curation for luxury residential villas and commercial spaces.'
+  name:'Engr. Chukwudi Zainco',
+  role:'Operations Director & Chief Engineer',
+  email:'admin@ezaincobrick.com',
+  phone:'+234 815 327 8764',
+  image:'../assets/logo/ezainco-brick-logo.png',
+  initials:'EZ',
+  location:'Municipal Plaza, Ikenegbu, Owerri',
+  bio:'Overseeing hydraulic compression operations, architectural brick manufacturing, and nationwide site logistics for E-ZAINCO BRICK.'
  }
 };
 
@@ -261,16 +282,62 @@ let db = loadDb(), currentPage='dashboard', editId=null, editSection=null;
 
 function loadDb(){
  try{
+  let serverProjects = null;
+  if(window.DB_PRELOADED_PROJECTS && Array.isArray(window.DB_PRELOADED_PROJECTS) && window.DB_PRELOADED_PROJECTS.length > 0){
+   serverProjects = window.DB_PRELOADED_PROJECTS.map((p, idx) => ({
+    id: 'p' + p.id,
+    title: p.title,
+    category: p.category || 'Masonry Architecture',
+    location: p.location || 'Nigeria',
+    client: p.testimonial_author || 'Client Project',
+    year: p.timeline || '2026',
+    image: resolveImgUrl(p.image, idx),
+    features: p.dimensions || (p.compressive_strength ? `${p.compressive_strength} Compressive Strength` : 'Pure Earth Brick'),
+    description: p.brief || p.approach || p.scope || 'Architectural masonry project engineered with E-ZAINCO bricks.',
+    status: p.status || 'Published'
+   }));
+  }
+
   const saved=JSON.parse(localStorage.getItem(KEY));
   if(saved){
-   return {
+   const current = {
     ...structuredClone(seed),
     ...saved,
     homepage:{...seed.homepage,...(saved.homepage||{})},
     profile:{...seed.profile,...(saved.profile||{})}
    };
+
+   let needsMigration = false;
+   if(Array.isArray(current.projects)){
+    const hasAvif = current.projects.some(p => p.image && (p.image.includes('.avif') || !p.image));
+    const hasOldTitles = current.projects.some(p => p.title && (p.title.includes('Civic Penthouse') || p.title.includes('Sanctuary Master Retreat')));
+    if(hasAvif || hasOldTitles || current.projects.length < 6){
+     needsMigration = true;
+    }
+   } else {
+    needsMigration = true;
+   }
+
+   if(needsMigration){
+    current.projects = serverProjects || structuredClone(seed.projects);
+    localStorage.setItem(KEY, JSON.stringify(current));
+   }
+
+   if(Array.isArray(current.projects)){
+    current.projects.forEach((p, idx) => {
+     p.image = resolveImgUrl(p.image, idx);
+    });
+   }
+
+   return current;
   }
-  return structuredClone(seed);
+
+  const initial = structuredClone(seed);
+  if(serverProjects){
+   initial.projects = serverProjects;
+  }
+  localStorage.setItem(KEY, JSON.stringify(initial));
+  return initial;
  }catch(e){
   return structuredClone(seed);
  }
@@ -310,7 +377,7 @@ function setPage(page){
 }
 
 function heading(title,desc,action=''){
- return `<div class="page-heading"><div><p class="eyebrow">BRISTS ATELIER / CONTENT STUDIO</p><h1>${title}</h1><p>${desc}</p></div><div class="heading-actions">${action}</div></div>`;
+ return `<div class="page-heading"><div><p class="eyebrow">E-ZAINCO BRICK / OPERATIONS PORTAL</p><h1>${title}</h1><p>${desc}</p></div><div class="heading-actions">${action}</div></div>`;
 }
 
 function button(label,action,primary=true,ic='plus'){
@@ -362,38 +429,121 @@ function render(){
 
 function dashboard(){
  const projects=db.projects||[], articles=db.journal||[], leads=db.consultations||[], published=projects.filter(x=>x.status==='Published').length;
- const stats=[['Projects managed',projects.length,'panels-top-left','Catalog records'],['Published projects',published,'eye','Visible on the website'],['Journal articles',articles.length,'notebook-pen','Insights and studio news'],['Consultation requests',leads.length,'calendar-check','Client enquiries received']];
- return `${heading('Good afternoon, Studio 👋','Here is what is happening across your digital studio today.',button('Add new content','new-project',true,'plus'))}
- <div class="welcome-banner"><div><p class="eyebrow" style="color:#D6E9DA">YOUR DIGITAL STUDIO</p><h2>Thoughtful spaces start here.</h2><p>Keep your Catalog fresh, your stories useful and every client enquiry moving forward.</p></div><button class="btn" data-action="go-projects">${icon('arrow-up-right')} Manage Catalog</button></div>
- <div class="stats-grid">${stats.map((s,i)=>`<article class="stat-card"><div class="stat-head"><span>${s[0]}</span><span class="stat-icon ${i===2?'gold':''}">${icon(s[2])}</span></div><div class="stat-value">${s[1]}</div><div class="stat-foot"><strong>${i===0?'Catalog':i===1?'Published':i===2?'Editorial':'Client care'}</strong> · ${s[3]}</div></article>`).join('')}</div>
- <div class="content-grid"><section class="panel"><div class="panel-head"><div><h2>Content activity</h2><p>Current content distribution across your studio</p></div><button class="text-link" data-page-link="analytics">View analytics ↗</button></div><div class="chart">${[['Projects',projects.length],['Journal',articles.length],['Services',(db.services||[]).length],['Pages',(db.pages||[]).length],['Team',(db.team||[]).length],['FAQs',(db.faqs||[]).length],['Reviews',(db.testimonials||[]).length]].map((x,i)=>`<div class="chart-col"><div class="chart-bars"><div class="bar ${i%2===0?'primary':''}" style="height:${Math.max(8,Math.min(100,x[1]*14))}%"></div></div><small>${x[0]}</small></div>`).join('')}</div><div class="chart-legend"><span><i class="legend-dot"></i>Published & managed content</span><span><i class="legend-dot pale"></i>Content volume</span></div></section>
- <section class="panel"><div class="panel-head"><div><h2>Recent activity</h2><p>Latest workspace changes</p></div><span class="status published">Live demo</span></div><div class="activity-list">${[{ic:'panels-top-left',title:'Catalog workspace ready',sub:`${projects.length} project records available`},{ic:'notebook-pen',title:'Journal workspace ready',sub:`${articles.length} article records available`},{ic:'calendar-check',title:'Client intake review',sub:`${leads.filter(x=>x.status==='New').length} new consultation request(s)`},{ic:'shield-check',title:'Browser storage enabled',sub:'Changes stay in this browser'}].map(x=>`<div class="activity"><span class="activity-icon">${icon(x.ic)}</span><div class="activity-copy"><b>${x.title}</b><small>${x.sub}</small></div></div>`).join('')}</div></section></div>
- <section class="panel"><div class="panel-head"><div><h2>Quick actions</h2><p>Jump into a frequent studio task</p></div></div><div class="quick-grid">${[['projects','Add Catalog project','Create a case study','plus'],['journal','Write a journal post','Share useful insight','notebook-pen'],['consultations','Review consultations','Respond to potential clients','calendar-check'],['homepage','Edit homepage hero','Refresh your first impression','panorama']].map(x=>`<button class="quick-action" data-action="quick-${x[0]}"><span class="stat-icon">${icon(x[3])}</span><span><b>${x[1]}</b><small>${x[2]}</small></span></button>`).join('')}</div></section>
- <div class="notice"><b>Prototype note:</b> This is a frontend-only working template. Records are saved to this browser with localStorage; it does not yet update the public website or securely process real client submissions. See README.md for the integration checklist.</div>`;
+ const stats=[['Masonry Projects',projects.length,'panels-top-left','Catalog records'],['Live Showcase Projects',published,'eye','Visible on website'],['Technical Journal',articles.length,'notebook-pen','Engineering insights'],['Consultation Requests',leads.length,'calendar-check','BOQ & supply leads']];
+ return `${heading('Good afternoon, Operations Team 👋','Real-time production, site delivery, and masonry project tracking across Nigeria.',button('Add new project','new-project',true,'plus'))}
+ <div class="welcome-banner">
+  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+   <img src="../assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand-logo-img" style="height:56px;width:auto;background:#fff;padding:6px 12px;border-radius:12px;border:1px solid rgba(255,255,255,0.3);box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+   <div>
+    <p class="eyebrow" style="color:#D6E9DA;margin-bottom:4px;letter-spacing:1.5px">E-ZAINCO BRICK OPERATIONS PORTAL</p>
+    <h2 style="font-size:26px;line-height:1.2;margin:0 0 6px">Engineered Density. Built for Legacy.</h2>
+    <p style="margin:0;opacity:0.9">Manage certified earth &amp; clay brick catalog, kiln schedules, automated BOQ requests, and nationwide site case studies.</p>
+   </div>
+  </div>
+  <button class="btn" data-action="go-projects">${icon('arrow-up-right')} Manage Projects</button>
+ </div>
+ <div class="stats-grid">${stats.map((s,i)=>`<article class="stat-card"><div class="stat-head"><span>${s[0]}</span><span class="stat-icon ${i===2?'gold':''}">${icon(s[2])}</span></div><div class="stat-value">${s[1]}</div><div class="stat-foot"><strong>${i===0?'Projects':i===1?'Published':i===2?'Technical':'Client Intake'}</strong> · ${s[3]}</div></article>`).join('')}</div>
+ <div class="content-grid"><section class="panel"><div class="panel-head"><div><h2>Operations &amp; Content Activity</h2><p>Active records across the E-ZAINCO platform</p></div><button class="text-link" data-page-link="analytics">View analytics ↗</button></div><div class="chart">${[['Projects',projects.length],['Journal',articles.length],['Services',(db.services||[]).length],['Pages',(db.pages||[]).length],['Team',(db.team||[]).length],['FAQs',(db.faqs||[]).length],['Reviews',(db.testimonials||[]).length]].map((x,i)=>`<div class="chart-col"><div class="chart-bars"><div class="bar ${i%2===0?'primary':''}" style="height:${Math.max(8,Math.min(100,x[1]*14))}%"></div></div><small>${x[0]}</small></div>`).join('')}</div><div class="chart-legend"><span><i class="legend-dot"></i>Active records</span><span><i class="legend-dot pale"></i>Inventory volume</span></div></section>
+ <section class="panel"><div class="panel-head"><div><h2>Recent Factory &amp; Site Updates</h2><p>Latest operational records</p></div><span class="status published">System Online</span></div><div class="activity-list">${[{ic:'panels-top-left',title:'Masonry Catalog Synced',sub:`${projects.length} architectural projects with photo records`},{ic:'notebook-pen',title:'Technical Journal Ready',sub:`${articles.length} engineering articles active`},{ic:'calendar-check',title:'Client Consultation Queue',sub:`${leads.filter(x=>x.status==='New').length} pending client inquiry`},{ic:'shield-check',title:'Quality Control Verified',sub:'12.5 MPa tested compressive strength'}].map(x=>`<div class="activity"><span class="activity-icon">${icon(x.ic)}</span><div class="activity-copy"><b>${x.title}</b><small>${x.sub}</small></div></div>`).join('')}</div></section></div>
+ <section class="panel"><div class="panel-head"><div><h2>Quick Operations</h2><p>Direct shortcuts for plant &amp; site tasks</p></div></div><div class="quick-grid">${[['projects','Add Masonry Project','New architectural case study','plus'],['journal','Publish Technical Article','Share engineering advice','notebook-pen'],['consultations','Review Quote Requests','Respond to builders & clients','calendar-check'],['homepage','Update Homepage Hero','Refresh first impression','panorama']].map(x=>`<button class="quick-action" data-action="quick-${x[0]}"><span class="stat-icon">${icon(x[3])}</span><span><b>${x[1]}</b><small>${x[2]}</small></span></button>`).join('')}</div></section>
+ <div class="notice"><b>Operations Note:</b> Connected to E-ZAINCO BRICK database and local browser cache. Changes made here persist for production catalog showcases and client intake.</div>`;
 }
 
 function sectionPage(key){
  const s=sections[key],rows=db[key]||[];
+ const isProjects = key === 'projects';
  return `${heading(s.title,s.desc,button('Add '+s.singular,'add-'+key,true,'plus'))}
  <section class="panel">
   <div class="table-tools">
    <label class="search-box">${icon('search')}<input id="tableSearch" placeholder="Search ${s.title.toLowerCase()}..." aria-label="Search records"></label>
    <select class="field-select" id="statusFilter"><option value="">All statuses</option>${[...new Set(rows.map(r=>r.status).filter(Boolean))].map(v=>`<option>${escapeHtml(v)}</option>`).join('')}</select>
+   ${isProjects ? `<div class="view-mode-toggle" id="projectsViewToggle">
+     <button type="button" class="view-mode-btn ${projectsViewMode==='table'?'active':''}" data-view-mode="table" title="Table list view">${icon('list')} Table</button>
+     <button type="button" class="view-mode-btn ${projectsViewMode==='grid'?'active':''}" data-view-mode="grid" title="Visual gallery card view">${icon('layout-grid')} Visual Gallery</button>
+   </div>` : ''}
    <span class="status">${rows.length} record${rows.length===1?'':'s'}</span>
   </div>
-  <div id="tableMount">${makeTable(key,rows)}</div>
+  <div id="tableMount">${isProjects && projectsViewMode==='grid' ? makeProjectCards(rows) : makeTable(key,rows)}</div>
   <div class="pagination">
    <span>Showing <b id="shownCount">${rows.length}</b> of ${rows.length} records</span>
-   <span>Local workspace storage</span>
+   <span>E-ZAINCO BRICK Operations Storage</span>
   </div>
  </section>
- ${key==='consultations'||key==='whatsapp'?'<div class="notice">For a live site, connect the public form/WhatsApp lead capture to a secured backend endpoint. This page currently manages demo records only.</div>':''}`;
+ ${key==='consultations'||key==='whatsapp'?'<div class="notice">Connected to E-ZAINCO client intake. Process enquiries, record site visit dates, and update quote progress.</div>':''}`;
 }
 
 function makeTable(key,rows){
  const s=sections[key];
  if(!rows.length) return `<div class="empty">${icon('folder-open')}<b>No records yet</b><p>Add your first ${s.singular} to get started.</p></div>`;
- return `<div class="table-wrap"><table><thead><tr><th>Record</th><th>${key==='consultations'||key==='whatsapp'?'Contact / details':'Category / details'}</th><th>Status</th><th>Updated</th><th style="text-align:right">Actions</th></tr></thead><tbody>${rows.map(r=>`<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.email,r.status,r.location,r.client,r.slug,r.author].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}"><td><div class="item-cell">${r.image?`<img class="item-thumb" src="${escapeHtml(r.image)}" alt="" onerror="this.style.visibility='hidden'">`:`<div class="item-thumb" style="display:grid;place-items:center;color:var(--accent)">${icon(s.icon)}</div>`}<div><b>${escapeHtml(r.title||'Untitled')}</b><small>${escapeHtml(r.slug||r.location||r.client||r.author||r.created||'No extra details')}</small></div></div></td><td><b>${escapeHtml(r.category||r.email||r.phone||'—')}</b><small style="display:block;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--soft)">${escapeHtml(r.description||r.excerpt||r.deliverables||r.specialities||r.budget||'—')}</small></td><td>${statusBadge(r.status||'Draft')}</td><td>${escapeHtml(r.updated||r.created||'Active')}</td><td><div class="row-actions"><button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button><button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button><button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button></div></td></tr>`).join('')}</tbody></table></div>`;
+ 
+ if(key==='projects'){
+  return `<div class="table-wrap"><table><thead><tr><th style="width:105px">Project Photo</th><th>Project Title &amp; Location</th><th>Category &amp; Masonry Specs</th><th>Status</th><th>Updated</th><th style="text-align:right">Actions</th></tr></thead><tbody>${rows.map((r,idx)=>{
+   const imgUrl = resolveImgUrl(r.image, idx);
+   return `<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.status,r.location,r.client,r.features,r.year].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}">
+    <td>
+     <div class="project-thumb-wrap" data-lightbox-src="${escapeHtml(imgUrl)}" data-lightbox-title="${escapeHtml(r.title||'Project Photo')}" data-lightbox-sub="${escapeHtml(r.location||r.category||'')}" title="Click to view full photo">
+      <img src="${escapeHtml(imgUrl)}" alt="${escapeHtml(r.title||'Project')}" loading="lazy" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">
+      <span class="thumb-zoom-badge"><i data-lucide="maximize-2"></i></span>
+     </div>
+    </td>
+    <td>
+     <div class="project-table-info">
+      <b style="font-size:12px;color:var(--heading)">${escapeHtml(r.title||'Untitled Project')}</b>
+      <small style="color:var(--soft);margin-top:2px;display:block">${icon('map-pin')} ${escapeHtml(r.location||'Nigeria')}${r.client ? ' · ' + escapeHtml(r.client) : ''}</small>
+      ${r.year ? `<span class="project-table-badge">${escapeHtml(r.year)}</span>` : ''}
+     </div>
+    </td>
+    <td>
+     <b style="color:var(--heading)">${escapeHtml(r.category||'Masonry Architecture')}</b>
+     <small style="display:block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--soft);margin-top:3px">${escapeHtml(r.features||r.description||'Pure Earth & Clay Masonry')}</small>
+    </td>
+    <td>${statusBadge(r.status||'Draft')}</td>
+    <td>${escapeHtml(r.updated||r.created||'Active')}</td>
+    <td>
+     <div class="row-actions">
+      <button class="icon-btn" title="View Full Image" aria-label="View Full Image" data-action="view-img" data-img="${escapeHtml(imgUrl)}" data-title="${escapeHtml(r.title||'Project Photo')}">${icon('image')}</button>
+      <button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button>
+      <button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button>
+      <button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button>
+     </div>
+    </td>
+   </tr>`;
+  }).join('')}</tbody></table></div>`;
+ }
+
+ return `<div class="table-wrap"><table><thead><tr><th>Record</th><th>${key==='consultations'||key==='whatsapp'?'Contact / details':'Category / details'}</th><th>Status</th><th>Updated</th><th style="text-align:right">Actions</th></tr></thead><tbody>${rows.map((r,idx)=>`<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.email,r.status,r.location,r.client,r.slug,r.author].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}"><td><div class="item-cell">${r.image?`<img class="item-thumb" src="${escapeHtml(resolveImgUrl(r.image, idx))}" alt="" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">`:`<div class="item-thumb" style="display:grid;place-items:center;color:var(--accent)">${icon(s.icon)}</div>`}<div><b>${escapeHtml(r.title||'Untitled')}</b><small>${escapeHtml(r.slug||r.location||r.client||r.author||r.created||'No extra details')}</small></div></div></td><td><b>${escapeHtml(r.category||r.email||r.phone||'—')}</b><small style="display:block;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--soft)">${escapeHtml(r.description||r.excerpt||r.deliverables||r.specialities||r.budget||'—')}</small></td><td>${statusBadge(r.status||'Draft')}</td><td>${escapeHtml(r.updated||r.created||'Active')}</td><td><div class="row-actions"><button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button><button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button><button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button></div></td></tr>`).join('')}</tbody></table></div>`;
+}
+
+function makeProjectCards(rows){
+ if(!rows.length) return `<div class="empty">${icon('folder-open')}<b>No project records yet</b><p>Add your first architectural masonry project.</p></div>`;
+ return `<div class="projects-gallery-grid">${rows.map((r, idx)=>{
+  const imgUrl = resolveImgUrl(r.image, idx);
+  return `<article class="project-card" data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.status,r.location,r.client,r.features,r.year].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}">
+   <div class="project-card-media" data-lightbox-src="${escapeHtml(imgUrl)}" data-lightbox-title="${escapeHtml(r.title||'Project Photo')}" data-lightbox-sub="${escapeHtml(r.location||r.category||'')}" title="Click to view full photo">
+    <img src="${escapeHtml(imgUrl)}" alt="${escapeHtml(r.title||'Project')}" loading="lazy" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">
+    <span class="project-card-badge">${escapeHtml(r.category||'Masonry Architecture')}</span>
+    <span class="project-card-status">${statusBadge(r.status||'Draft')}</span>
+   </div>
+   <div class="project-card-body">
+    <h3 class="project-card-title">${escapeHtml(r.title||'Untitled Project')}</h3>
+    <div class="project-card-meta">
+     <span>${icon('map-pin')} ${escapeHtml(r.location||'Nigeria')}</span>
+     ${r.year ? `<span>${icon('calendar')} ${escapeHtml(r.year)}</span>` : ''}
+     ${r.client ? `<span>${icon('user')} ${escapeHtml(r.client)}</span>` : ''}
+    </div>
+    <p class="project-card-desc">${escapeHtml(r.description||r.features||'Pure earth and clay masonry engineered by E-ZAINCO BRICK.')}</p>
+    <div class="project-card-foot">
+     <span style="font-weight:700;color:var(--accent)">${escapeHtml(r.features ? r.features.split(',')[0] : 'Solid Earth Brick')}</span>
+     <div class="row-actions">
+      <button class="icon-btn" title="View Full Image" aria-label="View Full Image" data-action="view-img" data-img="${escapeHtml(imgUrl)}" data-title="${escapeHtml(r.title||'Project Photo')}">${icon('image')}</button>
+      <button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-projects" data-id="${r.id}">${icon('pencil')}</button>
+      <button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-projects" data-id="${r.id}">${icon('refresh-cw')}</button>
+      <button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-projects" data-id="${r.id}">${icon('trash-2')}</button>
+     </div>
+    </div>
+   </div>
+  </article>`;
+ }).join('')}</div>`;
 }
 
 let analyticsRange=30;
@@ -729,7 +879,77 @@ document.addEventListener('change', e=>{
  }
 });
 
+function openLightbox(src, title='', sub=''){
+ let box = $('#imgLightbox');
+ if(!box){
+  box = document.createElement('div');
+  box.id = 'imgLightbox';
+  box.className = 'img-lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.innerHTML = `<div class="img-lightbox-inner">
+   <header class="img-lightbox-head">
+    <div>
+     <h3 id="lightboxTitle">Project Photo</h3>
+     <small id="lightboxSub" style="color:var(--soft);font-size:10px"></small>
+    </div>
+    <button class="icon-btn" id="lightboxClose" aria-label="Close photo preview">${icon('x')}</button>
+   </header>
+   <div class="img-lightbox-media">
+    <img id="lightboxImg" src="" alt="Project Photo">
+   </div>
+   <footer class="img-lightbox-foot">
+    <span>E-ZAINCO BRICK • Architectural Masonry Showcase</span>
+    <a id="lightboxDirectLink" href="#" target="_blank" class="text-link" style="font-weight:700">Open Full Original ↗</a>
+   </footer>
+  </div>`;
+  document.body.appendChild(box);
+ }
+ $('#lightboxTitle').textContent = title || 'Project Photo';
+ $('#lightboxSub').textContent = sub || 'Pure Brick Masonry • E-ZAINCO BRICK';
+ $('#lightboxImg').src = src;
+ $('#lightboxDirectLink').href = src;
+ box.classList.add('open');
+ refreshIcons();
+}
+
+function closeLightbox(){
+ const box = $('#imgLightbox');
+ if(box) box.classList.remove('open');
+}
+
+document.addEventListener('keydown', e=>{
+ if(e.key === 'Escape'){
+  closeLightbox();
+  closeModal();
+ }
+});
+
 document.addEventListener('click', e=>{
+ const lbTrigger = e.target.closest('[data-lightbox-src]');
+ if(lbTrigger){
+  openLightbox(lbTrigger.dataset.lightboxSrc, lbTrigger.dataset.lightboxTitle, lbTrigger.dataset.lightboxSub);
+  return;
+ }
+
+ const viewModeBtn = e.target.closest('[data-view-mode]');
+ if(viewModeBtn){
+  projectsViewMode = viewModeBtn.dataset.viewMode;
+  $$('.view-mode-btn').forEach(b => b.classList.toggle('active', b.dataset.viewMode === projectsViewMode));
+  const mount = $('#tableMount');
+  if(mount){
+   const rows = db.projects || [];
+   mount.innerHTML = projectsViewMode === 'grid' ? makeProjectCards(rows) : makeTable('projects', rows);
+   refreshIcons();
+  }
+  return;
+ }
+
+ if(e.target.closest('#lightboxClose') || e.target.id === 'imgLightbox'){
+  closeLightbox();
+  return;
+ }
+
  const nav=e.target.closest('.nav-link');
  if(nav){
   const targetHref=nav.getAttribute('href');
@@ -761,6 +981,10 @@ document.addEventListener('click', e=>{
  
  const act=e.target.closest('[data-action]');
  if(act){
+  if(act.dataset.action === 'view-img'){
+   openLightbox(act.dataset.img, act.dataset.title);
+   return;
+  }
   handleAction(act.dataset.action,act.dataset.id);
   return;
  }
