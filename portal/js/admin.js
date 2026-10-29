@@ -477,39 +477,44 @@ function makeTable(key,rows){
  if(!rows.length) return `<div class="empty">${icon('folder-open')}<b>No records yet</b><p>Add your first ${s.singular} to get started.</p></div>`;
  
  if(key==='projects'){
-  return `<div class="table-wrap"><table><thead><tr><th style="width:105px">Project Photo</th><th>Project Title &amp; Location</th><th>Category &amp; Masonry Specs</th><th>Status</th><th>Updated</th><th style="text-align:right">Actions</th></tr></thead><tbody>${rows.map((r,idx)=>{
-   const imgUrl = resolveImgUrl(r.image, idx);
-   return `<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.status,r.location,r.client,r.features,r.year].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}">
-    <td>
-     <div class="project-thumb-wrap" data-lightbox-src="${escapeHtml(imgUrl)}" data-lightbox-title="${escapeHtml(r.title||'Project Photo')}" data-lightbox-sub="${escapeHtml(r.location||r.category||'')}" title="Click to view full photo">
-      <img src="${escapeHtml(imgUrl)}" alt="${escapeHtml(r.title||'Project')}" loading="lazy" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">
-      <span class="thumb-zoom-badge"><i data-lucide="maximize-2"></i></span>
-     </div>
-    </td>
-    <td>
-     <div class="project-table-info">
-      <b style="font-size:12px;color:var(--heading)">${escapeHtml(r.title||'Untitled Project')}</b>
-      <small style="color:var(--soft);margin-top:2px;display:block">${icon('map-pin')} ${escapeHtml(r.location||'Nigeria')}${r.client ? ' · ' + escapeHtml(r.client) : ''}</small>
-      ${r.year ? `<span class="project-table-badge">${escapeHtml(r.year)}</span>` : ''}
-     </div>
-    </td>
-    <td>
-     <b style="color:var(--heading)">${escapeHtml(r.category||'Masonry Architecture')}</b>
-     <small style="display:block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--soft);margin-top:3px">${escapeHtml(r.features||r.description||'Pure Earth & Clay Masonry')}</small>
-    </td>
-    <td>${statusBadge(r.status||'Draft')}</td>
-    <td>${escapeHtml(r.updated||r.created||'Active')}</td>
-    <td>
-     <div class="row-actions">
-      <button class="icon-btn" title="View Full Image" aria-label="View Full Image" data-action="view-img" data-img="${escapeHtml(imgUrl)}" data-title="${escapeHtml(r.title||'Project Photo')}">${icon('image')}</button>
-      <button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button>
-      <button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button>
-      <button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button>
-     </div>
-    </td>
-   </tr>`;
-  }).join('')}</tbody></table></div>`;
- }
+   return `<div class="table-wrap"><table class="projects-table"><thead><tr>
+    <th>Project &amp; Location</th>
+    <th>Category &amp; Catalog Specifications</th>
+    <th>Status</th>
+    <th>Updated</th>
+    <th style="text-align:right">Actions</th>
+   </tr></thead><tbody>${rows.map((r,idx)=>{
+    const imgUrl = resolveImgUrl(r.image, idx);
+    return `<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.status,r.location,r.client,r.features,r.year].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}">
+     <td>
+      <div class="project-item-cell">
+       <div class="project-thumb-compact" data-lightbox-src="${escapeHtml(imgUrl)}" data-lightbox-title="${escapeHtml(r.title||'Project Photo')}" data-lightbox-sub="${escapeHtml(r.location||r.category||'')}" title="Click to view full photo">
+        <img src="${escapeHtml(imgUrl)}" alt="${escapeHtml(r.title||'Project')}" loading="lazy" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">
+       </div>
+       <div class="project-item-info">
+        <b>${escapeHtml(r.title||'Untitled Project')}</b>
+        <small>${escapeHtml(r.location||'Nigeria')}${r.client ? ' · ' + escapeHtml(r.client) : ''}${r.year ? ' (' + escapeHtml(r.year) + ')' : ''}</small>
+       </div>
+      </div>
+     </td>
+     <td>
+      <div class="project-spec-cell">
+       <b>${escapeHtml(r.category||'Masonry Architecture')}</b>
+       <small title="${escapeHtml(r.features||r.description||'')}">${escapeHtml(r.features||r.description||'Pure Earth & Clay Masonry')}</small>
+      </div>
+     </td>
+     <td>${statusBadge(r.status||'Draft')}</td>
+     <td>${escapeHtml(r.updated||r.created||'Active')}</td>
+     <td>
+      <div class="row-actions">
+       <button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button>
+       <button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button>
+       <button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button>
+      </div>
+     </td>
+    </tr>`;
+   }).join('')}</tbody></table></div>`;
+  }
 
  return `<div class="table-wrap"><table><thead><tr><th>Record</th><th>${key==='consultations'||key==='whatsapp'?'Contact / details':'Category / details'}</th><th>Status</th><th>Updated</th><th style="text-align:right">Actions</th></tr></thead><tbody>${rows.map((r,idx)=>`<tr data-record-row data-search="${escapeHtml([r.title,r.category,r.description,r.email,r.status,r.location,r.client,r.slug,r.author].join(' ').toLowerCase())}" data-status="${escapeHtml(r.status||'')}"><td><div class="item-cell">${r.image?`<img class="item-thumb" src="${escapeHtml(resolveImgUrl(r.image, idx))}" alt="" onerror="this.onerror=null;this.src='../assets/image-web/south1.jpeg'">`:`<div class="item-thumb" style="display:grid;place-items:center;color:var(--accent)">${icon(s.icon)}</div>`}<div><b>${escapeHtml(r.title||'Untitled')}</b><small>${escapeHtml(r.slug||r.location||r.client||r.author||r.created||'No extra details')}</small></div></div></td><td><b>${escapeHtml(r.category||r.email||r.phone||'—')}</b><small style="display:block;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--soft)">${escapeHtml(r.description||r.excerpt||r.deliverables||r.specialities||r.budget||'—')}</small></td><td>${statusBadge(r.status||'Draft')}</td><td>${escapeHtml(r.updated||r.created||'Active')}</td><td><div class="row-actions"><button class="icon-btn" title="Edit" aria-label="Edit" data-action="edit-${key}" data-id="${r.id}">${icon('pencil')}</button><button class="icon-btn" title="Change status" aria-label="Change status" data-action="status-${key}" data-id="${r.id}">${icon('refresh-cw')}</button><button class="icon-btn" title="Delete" aria-label="Delete" data-action="delete-${key}" data-id="${r.id}">${icon('trash-2')}</button></div></td></tr>`).join('')}</tbody></table></div>`;
 }
