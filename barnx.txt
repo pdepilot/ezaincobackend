@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="/brand/barnx-mark-exact.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/accba2fb-6762-4ff7-9b68-7cfcdda7ce13.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/5eb6cd56-f221-4a51-8d57-0021779f4bdd.png"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/536b557f9c8ec06f.css"
+      data-precedence="next"
+    />
+    <link
+      rel="preload"
+      as="script"
+      fetchpriority="low"
+      href="/_next/static/chunks/webpack-80351458349242ad.js"
+    />
+    <script
+      src="/_next/static/chunks/4bd1b696-f785427dddbba9fb.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/1255-7316b50163a428e6.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-app-5eb0d9c55a395822.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/2619-3c9e02e22d10480a.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/1143-9a1303075ddfd19a.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/157-6fb6b967b46204c0.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/layout-9b0111ac975f99b6.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/error-5056b5659cd31c07.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/5754-9096e51d5249c552.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/template-31fdb8303aeaa4b1.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/not-found-5582c1b5fea70849.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/608-4201c2fab416c869.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/projects/page-ba7670ed59d4188c.js"
+      async=""
+    ></script>
+    <title>Projects | Barnx</title>
+    <meta
+      name="description"
+      content="Selected Barnabas Mikel projects across software engineering, product UI, full-stack development and practical AI integrations."
+    />
+    <meta name="application-name" content="Barnx" />
+    <link rel="author" href="https://barnx-portfolio-v2.vercel.app" />
+    <meta name="author" content="Barnabas Mikel" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="creator" content="Barnabas Mikel" />
+    <meta name="publisher" content="Barnx" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+    <link
+      rel="canonical"
+      href="https://barnx-portfolio-v2.vercel.app/projects"
+    />
+    <meta property="og:title" content="Projects — Barnx" />
+    <meta
+      property="og:description"
+      content="Public builds, client work, case studies and templates across software engineering, AI and automation."
+    />
+    <meta
+      property="og:url"
+      content="https://barnx-portfolio-v2.vercel.app/projects"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@MRBARNX" />
+    <meta name="twitter:title" content="Barnx — Barnabas Mikel" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer building full-stack applications, AI-powered systems, API integrations and business automation."
+    />
+    <meta
+      name="twitter:image"
+      content="https://barnx-portfolio-v2.vercel.app/opengraph-image"
+    />
+    <link rel="icon" href="/favicon.svg" />
+    <script
+      src="/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      nomodule=""
+    ></script>
+  </head>
+  <body>
+    <div hidden=""><!--$--><!--/$--></div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Barnabas Mikel",
+        "url": "https://barnx-portfolio-v2.vercel.app",
+        "email": "mailto:mrbarnx@gmail.com",
+        "jobTitle": "Software Engineer | AI Engineering & Automation",
+        "description": "I build full-stack software, AI-powered applications, API integrations, internal business tools, and automated workflows that solve practical product and operational problems.",
+        "sameAs": [
+          "https://github.com/Mrbarnx",
+          "https://www.linkedin.com/in/mrbarns",
+          "https://x.com/MRBARNX"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Full-Stack Development",
+          "React",
+          "Vue.js",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AI Engineering",
+          "API Integration",
+          "Business Automation"
+        ]
+      }
+    </script>
+    <header class="jsx-4f4ed2f2baf4124 navWrap">
+      <nav class="jsx-4f4ed2f2baf4124 nav">
+        <a class="logo" href="/"
+          ><img
+            class="logoMark"
+            src="/brand/barnx-mark-exact.svg"
+            alt=""
+            aria-hidden="true"
+          /><span>Barnx</span></a
+        >
+        <div class="jsx-4f4ed2f2baf4124 navLinks">
+          <a class="" href="/">Home</a
+          ><a class="active" href="/projects">Projects</a
+          ><a class="" href="/impact">Impact</a
+          ><a class="" href="/barnx-studio">Barnx Studio</a>
+        </div>
+        <div class="jsx-4f4ed2f2baf4124 navRight">
+          <a class="resume" href="/resume">Résumé ↓</a
+          ><button
+            aria-label="Toggle navigation"
+            class="jsx-4f4ed2f2baf4124 mobileButton"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+            >
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="pageMotion" style="opacity: 0; transform: translateY(10px)">
+      <main class="page">
+        <section class="pageHero">
+          <span class="eyebrow">PROJECT ARCHIVE</span>
+          <h1>Products, interfaces<br />and intelligent systems.</h1>
+        </section>
+        <p
+          class="projectFilterIntro"
+          aria-live="polite"
+          style="opacity: 1; transform: none"
+        >
+          Explore public builds, client work, detailed case studies and
+          templates. Each project shows the proof that is safe and useful to
+          share.
+        </p>
+        <nav class="projectFilters" aria-label="Filter projects">
+          <button class="active" type="button" aria-pressed="true">All</button
+          ><button class="" type="button" aria-pressed="false">
+            Public Builds</button
+          ><button class="" type="button" aria-pressed="false">
+            Case Studies</button
+          ><button class="" type="button" aria-pressed="false">
+            Client Work</button
+          ><button class="" type="button" aria-pressed="false">
+            Templates
+          </button>
+        </nav>
+        <section class="projectGrid" aria-live="polite">
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/neatflow-cleaning-automation"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>NEATFLOW</strong
+                  ><small>Service request · workflow execution</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>NeatFlow Cleaning Automation</h2>
+                <p>
+                  A service website showing how one cleaning request can become
+                  a validated record, acknowledgement and visible follow-up
+                  task.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Workflow Design</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="NeatFlow Cleaning Automation links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/neatflow-cleaning-automation"
+                    >Case Study<!-- -->
+                    →</a
+                  ><a href="/impact/neatflow-request-to-follow-up"
+                    >Impact Story →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/havenly-property-lead-flow"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>HAVENLY</strong
+                  ><small>Property discovery · qualified lead</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Havenly Property Lead Flow</h2>
+                <p>
+                  A real-estate website that turns a vague property enquiry into
+                  a structured brief with a visible follow-up status.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Havenly Property Lead Flow links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/havenly-property-lead-flow"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/adaeze-okoro-architect-portfolio"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>AO / STUDIO</strong
+                  ><small>Selected work · case study · enquiry</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Adaeze Okoro Architect Portfolio</h2>
+                <p>
+                  A professional architecture portfolio that connects selected
+                  work and design thinking to a focused project enquiry.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Adaeze Okoro Architect Portfolio links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/adaeze-okoro-architect-portfolio"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/northstar-digital-storefront"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>NORTHSTAR</strong
+                  ><small>Product discovery · order request</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Northstar Digital Storefront</h2>
+                <p>
+                  A digital-product storefront that helps buyers discover
+                  resources, build an order and submit one structured request.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Northstar Digital Storefront links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/northstar-digital-storefront"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/formhaus-furniture-catalogue"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>FORMHAUS</strong
+                  ><small>Furniture catalogue · cart · WhatsApp enquiry</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Formhaus Furniture Catalogue</h2>
+                <p>
+                  A searchable furniture catalogue that helps buyers compare
+                  products, build a cart and send one structured sales enquiry.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Formhaus Furniture Catalogue links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/formhaus-furniture-catalogue"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/carepath-clinic-booking"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>CAREPATH</strong
+                  ><small>Clinic website · appointment request flow</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>CarePath Clinic Booking Website</h2>
+                <p>
+                  A clinic service website that turns an open-ended appointment
+                  conversation into a clear, reviewable request.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="CarePath Clinic Booking Website links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/carepath-clinic-booking"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/dispatch-now-lagos"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>DISPATCH NOW</strong
+                  ><small>Same-day delivery campaign · lead capture</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Dispatch Now Campaign Landing Page</h2>
+                <p>
+                  A focused same-day Lagos delivery campaign that moves visitors
+                  from one offer into a structured quote request.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Dispatch Now Campaign Landing Page links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/dispatch-now-lagos"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/greenlane-logistics-proof"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>GREENLANE</strong
+                  ><small>Logistics website · delivery request flow</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Web Design &amp; Development</span
+                >
+                <h2>Greenlane Logistics Quote Flow</h2>
+                <p>
+                  A logistics company website that turns an open-ended delivery
+                  conversation into a structured quote request.
+                </p>
+                <div class="tags">
+                  <b>HTML</b><b>CSS</b><b>JavaScript</b><b>Responsive UI</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Greenlane Logistics Quote Flow links"
+                >
+                  <button type="button">Interactive Preview ↗</button
+                  ><a href="/projects/greenlane-logistics-proof"
+                    >Case Study<!-- -->
+                    →</a
+                  ><a href="/impact/greenlane-structured-delivery-requests"
+                    >Impact Story →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/barnx-portfolio-cms"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>BARNX CMS</strong
+                  ><small>Portfolio content and publishing system</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->Full-Stack CMS</span
+                >
+                <h2>Barnx Portfolio CMS</h2>
+                <p>
+                  Authenticated content management, media storage, publishing
+                  workflows, analytics, privacy controls and automated
+                  deployments.
+                </p>
+                <div class="tags">
+                  <b>Next.js</b><b>Supabase</b><b>PostgreSQL</b><b>Vercel</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Barnx Portfolio CMS links"
+                >
+                  <a
+                    href="https://github.com/Mrbarnx/barnx-portfolio-CMS-v2"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/barnx-portfolio-cms"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/open-link-hub"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>OPENLINK</strong
+                  ><small>Own your links and digital identity</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->Full-Stack Product</span
+                >
+                <h2>OpenLink Hub</h2>
+                <p>
+                  An open-source, self-hostable link-in-bio platform with public
+                  profiles and secure content management.
+                </p>
+                <div class="tags">
+                  <b>Next.js</b><b>TypeScript</b><b>Cloudflare Workers</b
+                  ><b>Drizzle</b>
+                </div>
+                <div class="projectActions" aria-label="OpenLink Hub links">
+                  <button type="button">Interactive Preview ↗</button
+                  ><a
+                    href="https://github.com/Mrbarnx/Open-Link-Hub"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/open-link-hub"
+                    >Project Details<!-- -->
+                    →</a
+                  ><a href="/impact/openlink-own-your-digital-identity"
+                    >Impact Story →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/barnx-studio/automation-systems"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>AUTOMATION</strong
+                  ><small>Lead response · Support · CRM · Operations</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Case Study<!-- -->
+                  ·
+                  <!-- -->Software Systems</span
+                >
+                <h2>AI Automation &amp; Software Systems</h2>
+                <p>
+                  Business systems and demos designed around lead response,
+                  support, CRM and repetitive operational work.
+                </p>
+                <div class="tags">
+                  <b>Automation</b><b>AI</b><b>APIs</b><b>Workflows</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="AI Automation &amp; Software Systems links"
+                >
+                  <a href="/barnx-studio/automation-systems"
+                    >Case Study<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/wealthly-digital-investment-platform"
+                ><div class="projectVisual light hasCover">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <img
+                    class="projectCoverImage"
+                    src="https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/accba2fb-6762-4ff7-9b68-7cfcdda7ce13.png"
+                    alt="wealthy"
+                  /></div
+              ></a>
+              <div class="projectBody">
+                <span
+                  >Client Work<!-- -->
+                  ·
+                  <!-- -->Full-Stack Product Engineering</span
+                >
+                <h2>Wealthly — Digital Investment Platform</h2>
+                <p>
+                  An in-development digital investment platform covering
+                  investor onboarding, KYC, wallets, transactions, portfolios
+                  and fixed-term investments.
+                </p>
+                <div class="tags"></div>
+                <div
+                  class="projectActions"
+                  aria-label="Wealthly — Digital Investment Platform links"
+                >
+                  <a href="/projects/wealthly-digital-investment-platform"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/subly"
+                ><div class="projectVisual light hasCover">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <img
+                    class="projectCoverImage"
+                    src="https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/5eb6cd56-f221-4a51-8d57-0021779f4bdd.png"
+                    alt="subly hero ui"
+                  /></div
+              ></a>
+              <div class="projectBody">
+                <span
+                  >Client Work<!-- -->
+                  ·
+                  <!-- -->Full-Stack Product</span
+                >
+                <h2>Subly</h2>
+                <p>
+                  Responsive commerce and dashboard experiences for a digital
+                  access marketplace.
+                </p>
+                <div class="tags">
+                  <b>React</b><b>TypeScript</b><b>Vite</b><b>Tailwind CSS</b>
+                </div>
+                <div class="projectActions" aria-label="Subly links">
+                  <a
+                    href="https://github.com/Mrbarnx/SUBLY"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/subly"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/banx-automation-studio"
+                ><div class="projectVisual black">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>BANX</strong><small>Build · Automate · Scale</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->Automation / Web</span
+                >
+                <h2>BANX Automation Studio</h2>
+                <p>
+                  An automation studio concept presenting services and
+                  intelligent workflows through a product-led interface.
+                </p>
+                <div class="tags">
+                  <b>Next.js</b><b>TypeScript</b><b>Tailwind CSS</b
+                  ><b>Motion</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="BANX Automation Studio links"
+                >
+                  <a
+                    href="https://github.com/Mrbarnx/banxweb"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/banx-automation-studio"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/omni-channel-ai-chatbot"
+                ><div class="projectVisual gray">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>AI CHAT</strong
+                  ><small>Website + messaging conversation layer</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->AI Integration</span
+                >
+                <h2>Omni-Channel AI Chatbot</h2>
+                <p>
+                  Lead capture, qualification and handoff flows spanning web and
+                  messaging channels.
+                </p>
+                <div class="tags">
+                  <b>Node.js</b><b>TypeScript</b><b>Prisma</b><b>PostgreSQL</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Omni-Channel AI Chatbot links"
+                >
+                  <a
+                    href="https://github.com/Mrbarnx/Omni-Channel-AI-Chatbot-Node.js-"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/omni-channel-ai-chatbot"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/financeflow"
+                ><div class="projectVisual light">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>FINANCEFLOW</strong
+                  ><small>Personal finance dashboard</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->Frontend Application</span
+                >
+                <h2>FinanceFlow</h2>
+                <p>
+                  Personal finance dashboard with local persistence, transaction
+                  management and smart filtering.
+                </p>
+                <div class="tags">
+                  <b>Vue 3</b><b>TypeScript</b><b>Tailwind CSS</b><b>Pinia</b>
+                </div>
+                <div class="projectActions" aria-label="FinanceFlow links">
+                  <a
+                    href="https://github.com/Mrbarnx/personal-finance-dashboard"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/financeflow"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+          <div
+            class="projectCardWrap"
+            style="opacity: 0; transform: translateY(24px)"
+          >
+            <article class="projectCard">
+              <a href="/projects/community-impact-tracker"
+                ><div class="projectVisual gray">
+                  <div class="browser"><i></i><i></i><i></i></div>
+                  <strong>IMPACT</strong><small>Tech that serves people</small>
+                </div></a
+              >
+              <div class="projectBody">
+                <span
+                  >Public Build<!-- -->
+                  ·
+                  <!-- -->Frontend Application</span
+                >
+                <h2>Community Impact Tracker</h2>
+                <p>
+                  Civic engagement dashboard for discovering volunteer
+                  initiatives and visualizing community impact.
+                </p>
+                <div class="tags">
+                  <b>Vue 3</b><b>Pinia</b><b>SCSS</b><b>LocalStorage</b>
+                </div>
+                <div
+                  class="projectActions"
+                  aria-label="Community Impact Tracker links"
+                >
+                  <a
+                    href="https://github.com/Mrbarnx/community-impact-tracker"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Source Code ↗</a
+                  ><a href="/projects/community-impact-tracker"
+                    >Project Details<!-- -->
+                    →</a
+                  >
+                </div>
+              </div>
+            </article>
+            <button
+              type="button"
+              class="projectStar"
+              aria-pressed="false"
+              aria-label="Star this project"
+            >
+              <span>★</span>Star
+            </button>
+          </div>
+        </section>
+      </main>
+      <!--$--><!--/$-->
+    </div>
+    <footer class="jsx-4f4ed2f2baf4124">
+      <div class="jsx-4f4ed2f2baf4124 footerGrid">
+        <div class="jsx-4f4ed2f2baf4124">
+          <a class="logo" href="/"
+            ><img
+              class="logoMark"
+              src="/brand/barnx-mark-exact.svg"
+              alt=""
+              aria-hidden="true"
+            /><span>Barnx</span></a
+          >
+          <p class="jsx-4f4ed2f2baf4124">
+            Full-stack software, AI-powered systems, API integrations and
+            practical business automation.
+          </p>
+          <div class="jsx-4f4ed2f2baf4124 socials">
+            <a
+              href="https://github.com/Mrbarnx"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              class="jsx-4f4ed2f2baf4124"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                ></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a
+            ><a
+              href="https://www.linkedin.com/in/mrbarns"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              class="jsx-4f4ed2f2baf4124"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle></svg></a
+            ><a
+              href="https://x.com/MRBARNX"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="X"
+              class="jsx-4f4ed2f2baf4124"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.26-8.3L2.98 2h6.4l4.42 5.84L18.9 2Zm-1.1 17.84h1.73L8.44 4.05H6.58L17.8 19.84Z"
+                ></path></svg></a
+            ><a
+              href="https://tiktok.com/@mrbarnx"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="TikTok"
+              class="jsx-4f4ed2f2baf4124"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M15.1 2h3.25c.28 1.72 1.24 3.16 2.65 4.15V9.4a8.28 8.28 0 0 1-2.62-.66v6.35A6.91 6.91 0 1 1 12.4 8.2v3.3a3.67 3.67 0 1 0 2.7 3.54V2Z"
+                ></path></svg></a
+            ><a
+              href="mailto:mrbarnx@gmail.com"
+              aria-label="Email"
+              class="jsx-4f4ed2f2baf4124"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg
+            ></a>
+          </div>
+        </div>
+        <div class="jsx-4f4ed2f2baf4124">
+          <b class="jsx-4f4ed2f2baf4124">Navigation</b><a href="/">Home</a
+          ><a href="/projects">Projects</a
+          ><a href="/capabilities">Capabilities</a
+          ><a href="/services">Services</a><a href="/skills">Skills</a
+          ><a href="/experience">Experience</a><a href="/impact">Impact</a
+          ><a href="/barnx-studio">Barnx Studio</a>
+        </div>
+        <div class="jsx-4f4ed2f2baf4124">
+          <b class="jsx-4f4ed2f2baf4124">Resources</b
+          ><a href="/resume">Résumé</a><a href="/barnx-studio">Free resources</a
+          ><a href="/quote">Request a quote</a>
+        </div>
+        <div class="jsx-4f4ed2f2baf4124">
+          <b class="jsx-4f4ed2f2baf4124">Let&#x27;s connect</b
+          ><a href="mailto:mrbarnx@gmail.com" class="jsx-4f4ed2f2baf4124"
+            >mrbarnx@gmail.com</a
+          ><span class="jsx-4f4ed2f2baf4124">Remote · Nigeria</span>
+        </div>
+      </div>
+      <div class="jsx-4f4ed2f2baf4124 copyright">
+        © 2026 Barnx. Built with Next.js.
+      </div>
+    </footer>
+    <!--$--><!--/$--><!--$--><!--/$-->
+    <script
+      src="/_next/static/chunks/webpack-80351458349242ad.js"
+      id="_R_"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:"$Sreact.fragment"\n3:I[9766,[],""]\n4:I[8924,[],""]\n6:I[4431,[],"OutletBoundary"]\n8:I[5278,[],"AsyncMetadataOutlet"]\na:I[4431,[],"ViewportBoundary"]\nc:I[4431,[],"MetadataBoundary"]\nd:"$Sreact.suspense"\nf:I[7150,[],""]\n:HL["/_next/static/css/536b557f9c8ec06f.css","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:{"P":null,"b":"rXnr9hNFEs2zHIqGnxXm1","p":"","c":["","projects"],"i":false,"f":[[["",{"children":["projects",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/536b557f9c8ec06f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L2"]}],{"children":["projects",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],null],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":false}\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\n7:null\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([1, '10:I[622,[],"IconMark"]\n']);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '9:{"metadata":[["$","title","0",{"children":"Projects | Barnx"}],["$","meta","1",{"name":"description","content":"Selected Barnabas Mikel projects across software engineering, product UI, full-stack development and practical AI integrations."}],["$","meta","2",{"name":"application-name","content":"Barnx"}],["$","link","3",{"rel":"author","href":"https://barnx-portfolio-v2.vercel.app"}],["$","meta","4",{"name":"author","content":"Barnabas Mikel"}],["$","link","5",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","6",{"name":"creator","content":"Barnabas Mikel"}],["$","meta","7",{"name":"publisher","content":"Barnx"}],["$","meta","8",{"name":"robots","content":"index, follow"}],["$","meta","9",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","10",{"rel":"canonical","href":"https://barnx-portfolio-v2.vercel.app/projects"}],["$","meta","11",{"property":"og:title","content":"Projects — Barnx"}],["$","meta","12",{"property":"og:description","content":"Public builds, client work, case studies and templates across software engineering, AI and automation."}],["$","meta","13",{"property":"og:url","content":"https://barnx-portfolio-v2.vercel.app/projects"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:creator","content":"@MRBARNX"}],["$","meta","16",{"name":"twitter:title","content":"Barnx — Barnabas Mikel"}],["$","meta","17",{"name":"twitter:description","content":"Software Engineer building full-stack applications, AI-powered systems, API integrations and business automation."}],["$","meta","18",{"name":"twitter:image","content":"https://barnx-portfolio-v2.vercel.app/opengraph-image"}],["$","link","19",{"rel":"icon","href":"/favicon.svg"}],["$","$L10","20",{}]],"error":null,"digest":"$undefined"}\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([1, 'e:"$9:metadata"\n']);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '11:I[4467,["2619","static/chunks/2619-3c9e02e22d10480a.js","1143","static/chunks/1143-9a1303075ddfd19a.js","157","static/chunks/157-6fb6b967b46204c0.js","7177","static/chunks/app/layout-9b0111ac975f99b6.js"],"SiteShell"]\n12:I[9567,["8039","static/chunks/app/error-5056b5659cd31c07.js"],"default"]\n13:I[976,["5754","static/chunks/5754-9096e51d5249c552.js","6397","static/chunks/app/template-31fdb8303aeaa4b1.js"],"PageMotion"]\n14:I[2619,["2619","static/chunks/2619-3c9e02e22d10480a.js","4345","static/chunks/app/not-found-5582c1b5fea70849.js"],""]\n15:I[4578,["2619","static/chunks/2619-3c9e02e22d10480a.js","1143","static/chunks/1143-9a1303075ddfd19a.js","157","static/chunks/157-6fb6b967b46204c0.js","7177","static/chunks/app/layout-9b0111ac975f99b6.js"],"TechMarqueeEnhancer"]\n16:I[680,["2619","static/chunks/2619-3c9e02e22d10480a.js","1143","static/chunks/1143-9a1303075ddfd19a.js","157","static/chunks/157-6fb6b967b46204c0.js","7177","static/chunks/app/layout-9b0111ac975f99b6.js"],"FirstPartyAnalytics"]\n17:I[8955,["2619","static/chunks/2619-3c9e02e22d10480a.js","1143","static/chunks/1143-9a1303075ddfd19a.js","157","static/chunks/157-6fb6b967b46204c0.js","7177","static/chunks/app/layout-9b0111ac975f99b6.js"],"Analytics"]\n18:I[8854,["2619","static/chunks/2619-3c9e02e22d10480a.js","1143","static/chunks/1143-9a1303075ddfd19a.js","157","static/chunks/157-6fb6b967b46204c0.js","7177","static/chunks/app/layout-9b0111ac975f99b6.js"],"SpeedInsights"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '2:["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Person\\",\\"name\\":\\"Barnabas Mikel\\",\\"url\\":\\"https://barnx-portfolio-v2.vercel.app\\",\\"email\\":\\"mailto:mrbarnx@gmail.com\\",\\"jobTitle\\":\\"Software Engineer | AI Engineering \u0026 Automation\\",\\"description\\":\\"I build full-stack software, AI-powered applications, API integrations, internal business tools, and automated workflows that solve practical product and operational problems.\\",\\"sameAs\\":[\\"https://github.com/Mrbarnx\\",\\"https://www.linkedin.com/in/mrbarns\\",\\"https://x.com/MRBARNX\\"],\\"knowsAbout\\":[\\"Software Engineering\\",\\"Full-Stack Development\\",\\"React\\",\\"Vue.js\\",\\"Next.js\\",\\"TypeScript\\",\\"Node.js\\",\\"PostgreSQL\\",\\"Docker\\",\\"AI Engineering\\",\\"API Integration\\",\\"Business Automation\\"]}"}}],["$","$L11",null,{"settings":{"headline":"Software Engineer building full-stack applications, AI-powered systems, API integrations and business automation.","availability":"Available for new opportunities","email":"mrbarnx@gmail.com","github":"https://github.com/Mrbarnx","linkedin":"https://www.linkedin.com/in/mrbarns","x":"https://x.com/MRBARNX","tiktok":"https://tiktok.com/@mrbarnx","location":"Remote · Nigeria","resumeUrl":"https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-documents/8ee98d86-5111-4849-a8ed-f800bb2ccb55/resume-5a1e92bd-5415-4675-a612-efe1be5a9f73.pdf","seoTitle":"Barnx — Barnabas Mikel","seoDescription":"Software Engineer building full-stack applications, AI-powered systems, API integrations and business automation."},"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$12","errorStyles":[],"errorScripts":[],"template":["$","$L13",null,{"children":["$","$L4",null,{}]}],"templateStyles":[],"templateScripts":[],"notFound":[["$","main",null,{"className":"page","children":["$","section",null,{"className":"pageHero","style":{"minHeight":"62vh","display":"flex","flexDirection":"column","justifyContent":"center"},"children":[["$","span",null,{"className":"eyebrow","children":"404 · PAGE NOT FOUND"}],["$","h1",null,{"children":"This page doesn’t exist."}],["$","p",null,{"children":"The link may be outdated, or the page may have moved while Barnx Studio and the portfolio continue to evolve."}],["$","div",null,{"className":"heroActions","children":[["$","$L14",null,{"className":"button black","href":"/","children":"Back home →"}],["$","$L14",null,{"className":"button","href":"/projects","children":"View projects"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L15",null,{}],["$","$L16",null,{}],["$","$L17",null,{}],["$","$L18",null,{}]]}]}]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '19:I[608,["2619","static/chunks/2619-3c9e02e22d10480a.js","5754","static/chunks/5754-9096e51d5249c552.js","608","static/chunks/608-4201c2fab416c869.js","893","static/chunks/app/projects/page-ba7670ed59d4188c.js"],"ProjectArchive"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '5:["$","main",null,{"className":"page","children":[["$","section",null,{"className":"pageHero","children":[["$","span",null,{"className":"eyebrow","children":"PROJECT ARCHIVE"}],["$","h1",null,{"children":["Products, interfaces",["$","br",null,{}],"and intelligent systems."]}]]}],["$","$L19",null,{"projects":[{"slug":"neatflow-cleaning-automation","title":"NeatFlow Cleaning Automation","display":"NEATFLOW","category":"Web Design \u0026 Development","status":"Completed","short":"A service website showing how one cleaning request can become a validated record, acknowledgement and visible follow-up task.","overview":"NeatFlow is an independent case study exploring how a service business can connect its website request flow to the next operational steps without hiding what is simulated.","visualSubtitle":"Service request · workflow execution","tone":"light","problem":"Cleaning businesses may collect requests through messages and then manually copy the same details into customer replies and internal follow-up tasks.","solution":"A responsive service website with structured intake and a visible four-stage workflow that validates, records, acknowledges and assigns the request.","role":"Software Engineer / Product Designer","features":["Structured cleaning request","Required-field validation","Visible lead record creation","Prepared customer acknowledgement","Internal follow-up task state"],"tech":["HTML","CSS","JavaScript","Workflow Design"],"challenges":"Proving the workflow honestly without claiming that external CRM, email or WhatsApp integrations are connected.","lessons":"Automation proof is credible when each executed step and every integration boundary are visible.","live":"https://neatflow-cleaning-automation.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"impactSlug":"neatflow-request-to-follow-up","href":"/projects/neatflow-cleaning-automation"},{"slug":"havenly-property-lead-flow","title":"Havenly Property Lead Flow","display":"HAVENLY","category":"Web Design \u0026 Development","status":"Completed","short":"A real-estate website that turns a vague property enquiry into a structured brief with a visible follow-up status.","overview":"Havenly is an independent case study exploring how a property business can collect location, budget, property type and timeline before an agent begins follow-up.","visualSubtitle":"Property discovery · qualified lead","tone":"black","problem":"Property enquiries may arrive without enough context for an agent to recommend relevant options or decide the next step.","solution":"A visual real-estate landing experience with a guided qualification flow and structured business lead view.","role":"Software Engineer / Product Designer","features":["Property-type selection","Location and budget qualification","Timeline and contact preference","Reviewable property brief","Visible lead status"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Demonstrating useful lead qualification without inventing active listings, agent responses or conversion results.","lessons":"A smaller set of decision-ready fields can make the first sales conversation more focused.","live":"https://havenly-property-lead-flow.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/havenly-property-lead-flow"},{"slug":"adaeze-okoro-architect-portfolio","title":"Adaeze Okoro Architect Portfolio","display":"AO / STUDIO","category":"Web Design \u0026 Development","status":"Completed","short":"A professional architecture portfolio that connects selected work and design thinking to a focused project enquiry.","overview":"AO Studio is an independent portfolio case study showing how a specialist can present relevant work, explain product decisions and collect useful project context.","visualSubtitle":"Selected work · case study · enquiry","tone":"light","problem":"Architects and consultants may have strong work scattered across social posts and PDFs without a clear path from proof to enquiry.","solution":"An editorial portfolio with selected projects, one deeper case study and a structured new-project enquiry.","role":"Software Engineer / Product Designer","features":["Professional positioning","Selected project presentation","Detailed design case study","Responsive editorial layout","Structured project enquiry"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Making the portfolio feel credible without fabricating a real architect, commissioned projects or client outcomes.","lessons":"A specialist portfolio sells more effectively when the thinking behind the work is as clear as the final imagery.","live":"https://adaeze-okoro-architect-portfolio.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/adaeze-okoro-architect-portfolio"},{"slug":"northstar-digital-storefront","title":"Northstar Digital Storefront","display":"NORTHSTAR","category":"Web Design \u0026 Development","status":"Completed","short":"A digital-product storefront that helps buyers discover resources, build an order and submit one structured request.","overview":"Northstar is an independent case study exploring the customer journey between scattered product promotion and a full ecommerce platform.","visualSubtitle":"Product discovery · order request","tone":"black","problem":"Digital-product sellers may explain products and collect orders manually across posts, DMs and payment conversations.","solution":"A focused storefront with categories, product details, an order list and a structured request confirmation without pretending to process payment.","role":"Software Engineer / Product Designer","features":["Product collection","Category filtering","Clear product summaries","Multi-product order list","Structured order request"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Demonstrating ordering value without fake payment processing, file fulfilment or customer records.","lessons":"A storefront can validate product discovery and selection before payment and fulfilment infrastructure are added.","live":"https://northstar-digital-storefront.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/northstar-digital-storefront"},{"slug":"formhaus-furniture-catalogue","title":"Formhaus Furniture Catalogue","display":"FORMHAUS","category":"Web Design \u0026 Development","status":"Completed","short":"A searchable furniture catalogue that helps buyers compare products, build a cart and send one structured sales enquiry.","overview":"Formhaus is an independently designed case study exploring how a furniture supplier can make product discovery easier and turn selected products into a focused WhatsApp enquiry.","visualSubtitle":"Furniture catalogue · cart · WhatsApp enquiry","tone":"light","problem":"Furniture buyers may need to request product photos, materials, dimensions, prices and availability repeatedly through messages before they can narrow down suitable options.","solution":"A visual catalogue with search, category filters, product details, cart quantities, estimated totals and a structured WhatsApp sales handoff.","role":"Software Engineer / Product Designer","features":["15-product searchable catalogue","Category and colour filtering","NGN pricing and product details","Cart quantities and price breakdown","Personalised WhatsApp enquiry handoff"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Making the catalogue feel commercially useful without presenting demonstration prices as verified inventory or final transaction amounts.","lessons":"A catalogue creates value before ecommerce by helping buyers arrive at the sales conversation with clear selections, quantities and an estimated total.","live":"https://formhaus-furniture-catalogue.usajames017.chatgpt.site?v=6","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/formhaus-furniture-catalogue"},{"slug":"carepath-clinic-booking","title":"CarePath Clinic Booking Website","display":"CAREPATH","category":"Web Design \u0026 Development","status":"Completed","short":"A clinic service website that turns an open-ended appointment conversation into a clear, reviewable request.","overview":"CarePath is an independently designed case study exploring how an appointment-based clinic can explain its services and collect scheduling preferences before human follow-up.","visualSubtitle":"Clinic website · appointment request flow","tone":"light","problem":"Patients may need to ask about services, practitioner availability and suitable appointment times across several WhatsApp messages.","solution":"A responsive clinic website with service selection, practitioner preference, available periods, contact consent, request review and confirmation.","role":"Software Engineer / Product Designer","features":["Clinic services presentation","Service and practitioner selection","Availability request","Contact details and consent","Review and confirmation"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Designing a useful booking handoff without collecting medical history or presenting a request as a confirmed appointment.","lessons":"A healthcare booking experience should reduce administrative friction while keeping diagnosis, medical records and final confirmation in the appropriate human workflow.","live":"https://carepath-clinic-booking.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/carepath-clinic-booking"},{"slug":"dispatch-now-lagos","title":"Dispatch Now Campaign Landing Page","display":"DISPATCH NOW","category":"Web Design \u0026 Development","status":"Completed","short":"A focused same-day Lagos delivery campaign that moves visitors from one offer into a structured quote request.","overview":"Dispatch Now is an independently designed case study showing how a logistics landing page can keep one campaign offer, its conditions and its enquiry action together.","visualSubtitle":"Same-day delivery campaign · lead capture","tone":"black","problem":"Paid campaign traffic may reach a generic homepage or messaging channel without a focused path for the promoted delivery offer.","solution":"A single campaign page with offer conditions, coverage context, FAQs and a validated lead form with local review and confirmation.","role":"Software Engineer / Product Designer","features":["Single-offer campaign journey","Coverage and cutoff context","Validated logistics lead form","Pre-submission review","Structured request confirmation"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Keeping the message focused on one conversion goal without implying guaranteed delivery, instant pricing or measured campaign results.","lessons":"A conversion page becomes easier to assess when its promise, conditions and next action are visible in one continuous journey.","live":"https://dispatch-now-lagos.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"href":"/projects/dispatch-now-lagos"},{"slug":"greenlane-logistics-proof","title":"Greenlane Logistics Quote Flow","display":"GREENLANE","category":"Web Design \u0026 Development","status":"Completed","short":"A logistics company website that turns an open-ended delivery conversation into a structured quote request.","overview":"Greenlane is an independently designed case study exploring how a logistics business can explain its services and collect delivery details before a quote conversation.","visualSubtitle":"Logistics website · delivery request flow","tone":"light","problem":"Customers may need to explain pickup, destination, package and contact details manually through WhatsApp, creating avoidable back and forth.","solution":"A responsive service website with a guided delivery request, review step, confirmation reference and structured business request view.","role":"Software Engineer / Product Designer","features":["Service and coverage presentation","Four-step delivery request flow","Required-field and date validation","Request review and confirmation","Structured business request view"],"tech":["HTML","CSS","JavaScript","Responsive UI"],"challenges":"Keeping the experience focused while still showing the complete customer-to-business handoff.","lessons":"A strong case study makes the business friction and product decisions visible before it discusses implementation details.","live":"https://greenlane-logistics-proof.usajames017.chatgpt.site","projectType":"private_project","caseStudyEnabled":true,"interactivePreview":true,"impactSlug":"greenlane-structured-delivery-requests","href":"/projects/greenlane-logistics-proof"},{"slug":"barnx-portfolio-cms","title":"Barnx Portfolio CMS","display":"BARNX CMS","category":"Full-Stack CMS","status":"Production","short":"Authenticated content management, media storage, publishing workflows, analytics, privacy controls and automated deployments.","overview":"","visualSubtitle":"Portfolio content and publishing system","tone":"black","problem":"","solution":"","role":"Software Engineer","features":[],"tech":["Next.js","Supabase","PostgreSQL","Vercel"],"challenges":"","lessons":"","github":"https://github.com/Mrbarnx/barnx-portfolio-CMS-v2","projectType":"public_build","caseStudyEnabled":true,"openSource":true,"href":"/projects/barnx-portfolio-cms"},{"slug":"open-link-hub","title":"OpenLink Hub","display":"OPENLINK","category":"Full-Stack Product","status":"Production","short":"An open-source, self-hostable link-in-bio platform with public profiles and secure content management.","overview":"OpenLink Hub is a public open-source product created to give creators and professionals more control over their public links, branding, content and deployment.","visualSubtitle":"Own your links and digital identity","tone":"black","problem":"Hosted link-in-bio tools can make creators dependent on another platform for branding, content management and long-term access to their public identity page.","solution":"A self-hostable product combining fast public profiles, authenticated content management, media uploads and Cloudflare deployment.","role":"Full-Stack Engineer","features":["Public link-in-bio profiles","Authenticated content management","Media upload workflow","Self-hostable architecture","Cloudflare deployment"],"tech":["Next.js","TypeScript","Cloudflare Workers","Drizzle"],"challenges":"Keeping the public page simple while providing a secure management experience and portable deployment architecture.","lessons":"Open-source proof becomes more credible when people can inspect both the live product and the implementation behind it.","live":"https://open-link-hub.usajames017.workers.dev","github":"https://github.com/Mrbarnx/Open-Link-Hub","projectType":"public_build","caseStudyEnabled":true,"interactivePreview":true,"openSource":true,"impactSlug":"openlink-own-your-digital-identity","href":"/projects/open-link-hub"},{"slug":"automation-systems","title":"AI Automation \u0026 Software Systems","display":"AUTOMATION","category":"Software Systems","status":"In development","short":"Business systems and demos designed around lead response, support, CRM and repetitive operational work.","overview":"","visualSubtitle":"Lead response · Support · CRM · Operations","tone":"black","problem":"","solution":"","role":"Software Engineer","features":[],"tech":["Automation","AI","APIs","Workflows"],"challenges":"","lessons":"","projectType":"private_project","caseStudyEnabled":true,"href":"/barnx-studio/automation-systems"},{"slug":"wealthly-digital-investment-platform","title":"Wealthly — Digital Investment Platform","display":"WEALTHLY","category":"Full-Stack Product Engineering","status":"In development","short":"An in-development digital investment platform covering investor onboarding, KYC, wallets, transactions, portfolios and fixed-term investments.","overview":"Wealthly is a client investment product currently being designed and developed as an end-to-end digital platform. My work spans product requirements, user flows, UX/UI design, responsive frontend engineering, authentication and KYC workflows, wallet and transaction architecture, investment portfolio experiences, administrative operations, API/database architecture, testing and deployment planning.","visualSubtitle":"Investment journeys, portfolio management and operations in one product.","tone":"light","problem":"Investment products require clear onboarding, trustworthy identity verification, transparent transaction flows and an operational system that administrators can manage without creating friction for investors.","solution":"Designing and developing a responsive full-stack platform that connects investor onboarding, authentication, KYC, wallets, transaction records, portfolio tracking, fixed-term investments and administrative workflows through a coherent product architecture.","role":"Full-Stack Product Engineer","features":["Investor onboarding and authentication","KYC workflow","Wallet and transaction architecture","Portfolio dashboard","Fixed-term investment flows","Admin portal and operational controls","Responsive investor experience","API and database architecture"],"tech":[],"challenges":"Balancing a clear investor experience with KYC, financial-state accuracy, secure authentication and practical administrative control while the product evolves.","lessons":"Define transaction states and admin workflows early, then align product requirements, UI states, database models and API contracts before expanding implementation.","live":"$undefined","github":"$undefined","buyUrl":"$undefined","projectType":"client_work","caseStudyEnabled":true,"coverImage":{"id":"d973db6f-84b0-4704-a358-66d30b3f2863","url":"https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/accba2fb-6762-4ff7-9b68-7cfcdda7ce13.png","alt":"wealthy"},"galleryImages":[{"id":"d973db6f-84b0-4704-a358-66d30b3f2863","url":"https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/accba2fb-6762-4ff7-9b68-7cfcdda7ce13.png","alt":"wealthy"}],"video":"$undefined"},{"slug":"subly","title":"Subly","display":"SUBLY","category":"Full-Stack Product","status":"Public build","short":"Responsive commerce and dashboard experiences for a digital access marketplace.","overview":"Subly is a modern digital-access marketplace focused on clear discovery, purchase flows and account experiences.","visualSubtitle":"Digital access marketplace TEST","tone":"light","problem":"Digital products need a buying experience that feels trustworthy, fast and understandable across mobile and desktop.","solution":"I designed and implemented reusable React interfaces, responsive commerce flows and data-backed dashboard experiences with a product-system mindset.","role":"Frontend / Full-Stack Developer","features":["Responsive marketplace browsing","Reusable product and dashboard components","Account-oriented product flows","Data-backed application states"],"tech":["React","TypeScript","Vite","Tailwind CSS","Supabase"],"challenges":"Maintaining a consistent interface while supporting different product states, responsive layouts and evolving data requirements.","lessons":"Reusable UI primitives and typed data models make fast-moving product work significantly easier to maintain.","live":"$undefined","github":"https://github.com/Mrbarnx/SUBLY","buyUrl":"$undefined","projectType":"client_work","caseStudyEnabled":true,"coverImage":{"id":"ef6c7ca7-16a8-4158-9e10-dddbda2ebbce","url":"https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/5eb6cd56-f221-4a51-8d57-0021779f4bdd.png","alt":"subly hero ui"},"galleryImages":[{"id":"ef6c7ca7-16a8-4158-9e10-dddbda2ebbce","url":"https://xfmcktbpcuwlwbemjbhc.supabase.co/storage/v1/object/public/cms-media/8ee98d86-5111-4849-a8ed-f800bb2ccb55/5eb6cd56-f221-4a51-8d57-0021779f4bdd.png","alt":"subly hero ui"}],"video":"$undefined"},{"slug":"banx-automation-studio","title":"BANX Automation Studio","display":"BANX","category":"Automation / Web","status":"Public build","short":"An automation studio concept presenting services and intelligent workflows through a product-led interface.","overview":"BANX explores how an automation business can communicate complex services through a sharp, product-led web experience.","visualSubtitle":"Build · Automate · Scale","tone":"black","problem":"Automation services can feel vague. The website needed to make the offer understandable while still feeling technically credible.","solution":"I built a high-contrast interface around clear service architecture, interactive presentation and product-style storytelling.","role":"Frontend Developer / Designer","features":["Service presentation","Responsive interaction system","Automation offer architecture","Product-style visual storytelling"],"tech":["Next.js","TypeScript","Tailwind CSS","Motion"],"challenges":"Balancing visual ambition with clarity, performance and a straightforward user journey.","lessons":"Technical brands benefit from product-like UI when every visual element supports comprehension instead of decoration.","live":"$undefined","github":"https://github.com/Mrbarnx/banxweb","buyUrl":"$undefined","projectType":"public_build","caseStudyEnabled":true,"coverImage":"$undefined","galleryImages":"$undefined","video":"$undefined"},{"slug":"omni-channel-ai-chatbot","title":"Omni-Channel AI Chatbot","display":"AI CHAT","category":"AI Integration","status":"Public build","short":"Lead capture, qualification and handoff flows spanning web and messaging channels.","overview":"An AI-assisted conversation layer designed to handle lead intake, qualification and structured handoff across channels.","visualSubtitle":"Website + messaging conversation layer","tone":"gray","problem":"Businesses lose context when leads arrive through different channels and require repeated manual qualification.","solution":"I structured a Node-based backend and conversation workflow around shared lead data, AI-assisted responses and practical handoff logic.","role":"Full-Stack Developer","features":["Structured lead qualification","Shared conversation context","API-based AI integration","Handoff-ready lead records"],"tech":["Node.js","TypeScript","Prisma","PostgreSQL","AI APIs"],"challenges":"Keeping conversation state predictable while integrating external services and preserving useful lead context.","lessons":"The strongest AI features are usually narrow, observable and integrated into a clear business workflow.","live":"$undefined","github":"https://github.com/Mrbarnx/Omni-Channel-AI-Chatbot-Node.js-","buyUrl":"$undefined","projectType":"public_build","caseStudyEnabled":true,"coverImage":"$undefined","galleryImages":"$undefined","video":"$undefined"},{"slug":"financeflow","title":"FinanceFlow","display":"FINANCEFLOW","category":"Frontend Application","status":"Public build","short":"Personal finance dashboard with local persistence, transaction management and smart filtering.","overview":"A responsive Vue dashboard for everyday income and expense tracking with immediate feedback and local-first persistence.","visualSubtitle":"Personal finance dashboard","tone":"light","problem":"Basic personal finance tools often make simple transaction tracking feel heavier than necessary.","solution":"I created a focused dashboard with clear balance states, transaction management and category filtering.","role":"Frontend Developer","features":["Real-time balance updates","Transaction creation and deletion","Category filters","Local persistence"],"tech":["Vue 3","TypeScript","Tailwind CSS","Pinia","Vite"],"challenges":"Keeping derived totals and filters synchronized while maintaining a simple mental model.","lessons":"Good dashboard UX depends more on hierarchy and state clarity than visual density.","live":"$undefined","github":"https://github.com/Mrbarnx/personal-finance-dashboard","buyUrl":"$undefined","projectType":"public_build","caseStudyEnabled":true,"coverImage":"$undefined","galleryImages":"$undefined","video":"$undefined"},{"slug":"community-impact-tracker","title":"Community Impact Tracker","display":"IMPACT","category":"Frontend Application","status":"Public build","short":"Civic engagement dashboard for discovering volunteer initiatives and visualizing community impact.","overview":"A civic-focused application that helps communities explore opportunities and track visible impact.","visualSubtitle":"Tech that serves people","tone":"gray","problem":"Community initiatives can be difficult to discover and their outcomes are often invisible to participants.","solution":"I built a responsive Vue experience combining discovery, filtering, volunteer sign-up and dynamic impact metrics.","role":"Frontend Developer","features":["Initiative discovery","Cause and location filtering","Volunteer sign-up flow","Dynamic impact metrics"],"tech":["Vue 3","Pinia","SCSS","LocalStorage"],"challenges":"Presenting multiple cause categories and metrics without making the interface feel like a dense admin dashboard.","lessons":"Civic products need clear language and accessible interaction patterns before visual flourish.","live":"$undefined","github":"https://github.com/Mrbarnx/community-impact-tracker","buyUrl":"$undefined","projectType":"public_build","caseStudyEnabled":true,"coverImage":"$undefined","galleryImages":"$undefined","video":"$undefined"}]}]]}]\n',
+      ]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Architectural Evolution of Owerri — BRISTS Journal</title>
+  <meta name="description" content="Explore why modern minimalist architecture and quiet botanical luxury are replacing ostentatious ornament across Southeastern Nigeria's luxury residences." />
+  <meta name="theme-color" content="#F5F8F5" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/png" href="../assets/favicon-icons/camera_alt_45dp_E3E3E3.png" />
+  <link rel="icon" type="image/png" sizes="45x45" href="../assets/favicon-icons/push_pin_45dp_E3E3E3.png" />
+  <link rel="apple-touch-icon" href="../assets/favicon-icons/camera_alt_45dp_E3E3E3.png" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE NAVIGATION (Sticky with Verdant Glass on Scroll)
+       ========================================================================== -->
+  <header class="site-nav" id="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html" aria-label="BRISTS Interior Design Home">
+        <span class="brand__mark">B</span>
+        <div class="brand__text">
+          <span class="brand__name">BRISTS</span>
+          <span class="brand__tag">INTERIOR DESIGN</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../services.html">Services</a>
+        <a class="nav-link" href="../catalog.html">Catalog</a>
+        <a class="nav-link" href="../about.html">About</a>
+        <a class="nav-link active" href="../journal.html">Journal</a>
+        <a class="nav-link" href="../contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggler -->
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle Light and Dark Theme" title="Toggle Theme">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+
+        <a class="btn btn--primary btn--sm" href="../contact.html#booking">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open mobile navigation" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <ul class="mobile-nav__links">
+      <li><a class="mobile-nav__link" href="../index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="../services.html">Services</a></li>
+      <li><a class="mobile-nav__link" href="../catalog.html">Catalog</a></li>
+      <li><a class="mobile-nav__link" href="../about.html">About</a></li>
+      <li><a class="mobile-nav__link" href="../journal.html">Journal</a></li>
+      <li><a class="mobile-nav__link" href="../contact.html">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav__footer">
+      <div>
+        <p style="font-weight:700; color:var(--text-heading);">Studio Address</p>
+        <p class="text-muted" style="font-size:0.9rem;">Suite 11, Municipal Plaza, Umez Eronini St, Ikenegbu, Owerri</p>
+      </div>
+      <div>
+        <p style="font-weight:700; color:var(--text-heading);">Direct Contact</p>
+        <p class="text-muted" style="font-size:0.9rem;">+234 701 409 3037 (Call &amp; WhatsApp)</p>
+      </div>
+      <a class="btn btn--glacier" href="https://wa.me/2347014093037" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         ARTICLE HEADER
+         ========================================================================== -->
+    <article class="article-header">
+      <div class="container article-header__inner">
+        <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <i data-lucide="chevron-right" class="icon-12"></i>
+          <a href="../journal.html">Journal</a>
+          <i data-lucide="chevron-right" class="icon-12"></i>
+          <span>Editorial Feature</span>
+        </nav>
+
+        <span class="chip chip--accent" style="margin-bottom: 0.75rem;">
+          <i data-lucide="award"></i>
+          <span>Editor's Longform Feature</span>
+        </span>
+
+        <h1 class="article-header__title">
+          The Architectural Evolution of Owerri: Why Modern Minimalist Homes Are Defining the South-East.
+        </h1>
+
+        <p class="article-header__lead">
+          For decades, residential luxury in Imo State was measured by heavy Grecian columns, gilded plasterboards, and ornate crystal fixtures. Today, a new generation of homeowners is prioritizing serene acoustics, cold-white light, and unadorned architectural truth.
+        </p>
+
+        <div class="article-meta-bar">
+          <div class="article-author-badge">
+            <img class="article-author-badge__avatar" src="../assets/image-web/photo-1616594039964-ae9021a400a0.avif" alt="Chukwudi Brist" />
+            <div class="article-author-badge__info">
+              <span class="article-author-badge__name">Chukwudi Brist</span>
+              <span class="article-author-badge__role">Principal Architect &amp; Founder</span>
+            </div>
+          </div>
+
+          <div class="article-meta-info">
+            <span class="article-meta-item">
+              <i data-lucide="calendar" class="icon-14"></i>
+              <span>October 14, 2026</span>
+            </span>
+            <span class="article-meta-item">
+              <i data-lucide="clock" class="icon-14"></i>
+              <span>7 Min Read (~1,040 Words)</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==========================================================================
+         FEATURED HERO IMAGE
+         ========================================================================== -->
+    <div class="container">
+      <figure class="article-featured-hero">
+        <img src="../assets/image-web/photo-1644057501622-dfa7dd26dbfb.avif" alt="Modern Minimalist Home Architecture in Owerri by BRISTS" />
+        <figcaption>
+          <i data-lucide="camera" class="icon-14"></i>
+          <span>The Civic Residence, Imo State — Modern geometric purity, muted botanical verdant accents, and glare-free architectural luminescence.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- ==========================================================================
+         ARTICLE BODY WITH SIDEBAR
+         ========================================================================== -->
+    <div class="container">
+      <div class="article-body-container">
+        
+        <!-- Main Prose Column -->
+        <div class="article-prose">
+          <p>
+            To understand the changing face of Southeastern Nigerian architecture, take a drive through the established neighborhoods of Owerri: from the expansive gated compounds of New Owerri and Works Layout to the prime commercial avenues of Ikenegbu and Aladinma.
+          </p>
+          <p>
+            For much of the late 1990s and 2000s, residential success was proclaimed through sheer visual decibels. Homes featured towering composite columns mimicking Roman temples, baroque gold leaf detailing, heavy plaster cornices layered three levels deep, and multicolored ceiling chandeliers that competed for visual dominance.
+          </p>
+          <p>
+            Yet over the past five years, a quiet revolution has taken root. A new cohort of homeowners—comprising tech entrepreneurs, legal advocates, diaspora professionals, and medical consultants—has rejected ostentatious ornamentation in favor of architectural restraint. The new luxury is not what is added to a room; it is the discipline of what is left out.
+          </p>
+
+          <h2 id="diaspora-catalyst">1. The Diaspora Catalyst: Lessons from London and Toronto</h2>
+          <p>
+            A major driving force behind this transformation is the returnee and diaspora investor. Families relocating from or maintaining dual residences in London, Houston, Dallas, and Toronto are accustomed to living in spaces defined by clean lines, integrated joinery, and circadian warmth.
+          </p>
+          <p>
+            When these clients return to Nigeria to build their permanent family homes or retirement sanctuaries, they are profoundly disappointed by the standard offerings of local contractors. They do not want ornate gold trims that gather dust during harmattan, nor do they want stepped plasterboard ceilings with glaring blue rope lights.
+          </p>
+
+          <blockquote>
+            "True luxury in modern Nigeria is not ornamentation; it is the feeling of calm you experience the moment the heavy door closes behind you. It is acoustic quiet, tactile honesty, and uncompromised light."
+            <cite>— Chukwudi Brist, Principal Architect</cite>
+          </blockquote>
+
+          <h2 id="maintenance-burden">2. The Hidden Maintenance Tax of Gilded Plasterboards</h2>
+          <p>
+            Aside from aesthetic fatigue, the ornate architectural style carries an unbearable maintenance burden in Nigeria's climate:
+          </p>
+          <ul>
+            <li><strong>Dust Deposition:</strong> Complex multi-tiered POP mouldings collect harmattan dust that cannot be reached or wiped without commercial scaffolding.</li>
+            <li><strong>Thermal Cracking:</strong> The high seasonal temperature differential between hot afternoons and rainy night downpours causes brittle plaster joints to fracture.</li>
+            <li><strong>Insect Nesting:</strong> Elaborate hollow ceiling cornices create dark void cavities where spiders, lizards, and pests nest undetected.</li>
+          </ul>
+          <p>
+            In contrast, minimalist architectural interiors utilize <strong>planar shadow gaps</strong> (reveals of 10mm to 15mm between walls and ceilings). With no projecting mouldings to trap dust, walls remain pristine for years with simple periodic repainting.
+          </p>
+
+          <h2 id="verdant-luxe">3. Verdant Luxe: The Synthesis of Nature &amp; Architecture</h2>
+          <p>
+            Minimalism in Africa cannot simply copy cold Scandinavian grey boxes. A stark, sterile interior feels alien and uncomfortable against the vivid greenery and intense sunshine of Imo State.
+          </p>
+          <p>
+            This insight gave birth to our studio’s signature <strong>Verdant Luxe</strong> design philosophy:
+          </p>
+
+          <div class="article-table-wrap">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>Design Dimension</th>
+                  <th>The Outdated Baroque Approach</th>
+                  <th>The Verdant Luxe Architectural Approach</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Color Palette</strong></td>
+                  <td>Gilded golds, royal purples, and harsh cool whites</td>
+                  <td>Botanical Alabaster (#F5F8F5), Deep Forest Emerald, and Soft Sage</td>
+                </tr>
+                <tr>
+                  <td><strong>Surfaces &amp; Countertops</strong></td>
+                  <td>Veneered chipboard and faux granite with resin seams</td>
+                  <td>Monolithic waterfall sintered slabs with bookmatched marble veins</td>
+                </tr>
+                <tr>
+                  <td><strong>Ceiling &amp; Light</strong></td>
+                  <td>Ornate tiered POP trays with high-glare 6500K blue neon</td>
+                  <td>Flat plane ceilings with perimeter 2700K indirect coves and CRI 95+ optics</td>
+                </tr>
+                <tr>
+                  <td><strong>Cabinetry &amp; Doors</strong></td>
+                  <td>Carved panel doors with projecting knobs and visible hinges</td>
+                  <td>Concealed pivot doors, handleless push millwork, and fluted ash slats</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="article-callout">
+            <div class="article-callout__head">
+              <i data-lucide="feather"></i>
+              <span>The Psychology of Unadorned Space</span>
+            </div>
+            <p>
+              In a busy, high-energy environment like Nigeria, sensory overload is a daily reality. When you enter a home built with clean geometry, hidden storage, and gentle natural materials, the nervous system downshifts immediately. Your home becomes a sanctuary rather than a showroom.
+            </p>
+          </div>
+
+          <h2 id="future-outlook">4. The Next Decade of Southeastern Architecture</h2>
+          <p>
+            As land values in prime Owerri districts continue to climb, homeowners are recognizing that intelligent spatial planning creates far more lasting financial value than superficial exterior decorations. Homes engineered with smart lighting circuits, acoustic isolation, and durable sintered stone maintain their resale premiums and command top rental yields from multinational corporate executives.
+          </p>
+          <p>
+            At BRISTS, we are privileged to stand at the forefront of this movement—demonstrating that world-class architectural excellence does not require flying in overseas teams, but rather championing local craftsmanship, transparent design-build protocols, and enduring design integrity.
+          </p>
+
+          <!-- Share Strip -->
+          <div class="article-share-strip">
+            <span class="article-share-strip__title">Share this editorial longform:</span>
+            <div class="article-share-btns">
+              <a class="article-share-btn js-copy-link" href="#" title="Copy Link to Clipboard" aria-label="Copy Link">
+                <i data-lucide="link-2" class="icon-16"></i>
+              </a>
+              <a class="article-share-btn" href="https://api.whatsapp.com/send?text=The%20Architectural%20Evolution%20of%20Owerri%20by%20BRISTS%20https://bristsinteriors.com/blog-post/blog-post/blog-architectural-evolution-owerri.html" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+                <i data-lucide="message-circle" class="icon-16"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Author Bio Card -->
+          <div class="article-author-card">
+            <img class="article-author-card__avatar" src="../assets/image-web/photo-1616594039964-ae9021a400a0.avif" alt="Chukwudi Brist" />
+            <div class="article-author-badge__info">
+              <h4>Chukwudi Brist</h4>
+              <span class="article-author-card__role">Principal Architect &amp; Creative Director</span>
+              <p class="article-author-card__text">
+                Chukwudi Brist is an architectural theorist and founder of BRISTS Interior Design, based in Ikenegbu, Owerri. He writes extensively on post-colonial African spatial theory, tropical material longevity, and contemporary Nigerian interior architecture.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Navigation -->
+          <div class="article-bottom-nav">
+            <a class="article-bottom-nav__card" href="blog-office-interior-productivity-prestige.html">
+              <span>&larr; Previous Article</span>
+              <h4>Planning an Office Interior for Productivity &amp; Prestige</h4>
+            </a>
+            <a class="article-bottom-nav__card" href="blog-how-to-plan-interior-design-project-owerri.html">
+              <span>Start from Article 1 &rarr;</span>
+              <h4>How to Plan an Interior Design Project in Owerri</h4>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Sticky Sidebar -->
+        <aside class="article-sidebar">
+          <div class="article-sidebar__widget">
+            <h3 class="article-sidebar__title">Table of Contents</h3>
+            <ul class="toc-list">
+              <li><a href="#diaspora-catalyst">1. The Diaspora Catalyst</a></li>
+              <li><a href="#maintenance-burden">2. Maintenance Burden of Ornament</a></li>
+              <li><a href="#verdant-luxe">3. The Verdant Luxe Synthesis</a></li>
+              <li><a href="#future-outlook">4. The Next Decade</a></li>
+            </ul>
+          </div>
+
+          <div class="article-sidebar__widget" style="background:var(--bg-secondary); border-color:var(--border-strong);">
+            <span class="chip chip--accent" style="margin-bottom:0.75rem;">
+              <i data-lucide="sparkles"></i>
+              <span>Studio Practice</span>
+            </span>
+            <h4 style="font-family:var(--font-display); font-size:1.25rem; color:var(--text-heading); margin-bottom:0.65rem;">
+              Building in Owerri?
+            </h4>
+            <p class="text-muted" style="font-size:0.875rem; line-height:1.6; margin-bottom:1.25rem;">
+              Let's create a serene, minimalist sanctuary tailored to your family's lifestyle. In-person or digital consultations available.
+            </p>
+            <a class="btn btn--primary btn--sm" href="../contact.html#booking" style="width:100%; justify-content:center;">
+              <span>Discuss Your Architecture</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         RELATED ARTICLES
+         ========================================================================== -->
+    <section class="section" style="background:var(--bg-surface); border-top:1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="sec-head sec-head--center" data-reveal>
+          <span class="kicker">Continue Reading</span>
+          <h2 class="h-section">Related Journal Publications</h2>
+        </div>
+
+        <div class="journal-grid" data-reveal>
+          <article class="journal-card">
+            <div class="journal-card__thumb">
+              <img class="journal-card__img" src="../assets/image-web/photo-1699239116624-85268dce7377.avif" alt="How to Plan an Interior Design Project in Owerri" loading="lazy" />
+            </div>
+            <div class="journal-card__body">
+              <span class="journal-card__date">October 2026 • 5 Min Read</span>
+              <h3 class="journal-card__title">How to Plan an Interior Design Project in Owerri</h3>
+              <p class="journal-card__excerpt">
+                Why bringing an interior architect onboard during the early blockwork stage saves millions in conduit re-channelling.
+              </p>
+              <a class="btn btn--ghost" href="blog-how-to-plan-interior-design-project-owerri.html" style="margin-top:auto; padding-left:0;">
+                <span>Read Full Guide</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-card__thumb">
+              <img class="journal-card__img" src="../assets/image-web/photo-1704040686413-2c607dbd2f06.avif" alt="What Determines the Cost of Interior Design in Nigeria" loading="lazy" />
+            </div>
+            <div class="journal-card__body">
+              <span class="journal-card__date">September 2026 • 7 Min Read</span>
+              <h3 class="journal-card__title">What Determines the Cost of Interior Design in Nigeria?</h3>
+              <p class="journal-card__excerpt">
+                A frank breakdown of raw material costs: marine plywood vs. MDF, sintered stone vs. imported marble, and architectural LED drivers.
+              </p>
+              <a class="btn btn--ghost" href="blog-cost-of-interior-design-nigeria.html" style="margin-top:auto; padding-left:0;">
+                <span>Read Full Guide</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-card__thumb">
+              <img class="journal-card__img" src="../assets/image-web/premium_photo-1661964402307-02267d1423f5.avif" alt="Choosing Materials for a Beautiful Practical Home" loading="lazy" />
+            </div>
+            <div class="journal-card__body">
+              <span class="journal-card__date">August 2026 • 5 Min Read</span>
+              <h3 class="journal-card__title">Choosing Materials for a Beautiful, Practical Home</h3>
+              <p class="journal-card__excerpt">
+                Practical tips on selecting high-durability fabrics, stain-guarded bouclé, and mold-resistant wall claddings engineered for Nigeria.
+              </p>
+              <a class="btn btn--ghost" href="blog-choosing-materials-practical-home.html" style="margin-top:auto; padding-left:0;">
+                <span>Read Full Guide</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="../index.html">
+            <span class="brand__mark">B</span>
+            <div class="brand__text">
+              <span class="brand__name">BRISTS</span>
+              <span class="brand__tag">INTERIOR DESIGN</span>
+            </div>
+          </a>
+          <p class="text-muted" style="font-size:0.925rem; line-height: 1.65; max-width: 320px;">
+            A premier digital showroom and architectural interior practice. Delivering refined Verdant Luxe luxury, timeless functionality, and meticulous execution across Nigeria and the diaspora.
+          </p>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-top:0.5rem;">
+            <span class="watermark-badge">
+              <i data-lucide="shield-check" class="icon-14"></i>
+              <span>Verified Studio Practice</span>
+            </span>
+          </div>
+
+          <!-- Prominent Social Links -->
+          <div class="footer-social-row" aria-label="Follow BRISTS on Social Media">
+            <a class="footer-social-btn social-instagram" href="https://instagram.com/bristsinteriors" target="_blank" rel="noopener" aria-label="BRISTS on Instagram" title="Follow on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="footer-social-btn social-whatsapp" href="https://wa.me/2347014093037?text=Hello%20Brists%20Interior%20Decor,%20I'd%20like%20to%20make%20an%20inquiry%20about%20a%20project..." target="_blank" rel="noopener" aria-label="Chat with BRISTS on WhatsApp" title="Chat on WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a class="footer-social-btn social-facebook" href="https://facebook.com" target="_blank" rel="noopener" aria-label="BRISTS on Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a class="footer-social-btn social-linkedin" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="BRISTS on LinkedIn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services.html">Design Services</a></li>
+            <li><a href="../catalog.html">Brick Catalog</a></li>
+            <li><a href="../about.html">Studio &amp; Story</a></li>
+            <li><a href="../journal.html">Design Journal</a></li>
+            <li><a href="../contact.html">Contact &amp; Consult</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Design Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="../services.html#residential">Residential Architecture</a></li>
+            <li><a href="../services.html#commercial">Commercial &amp; Law Suites</a></li>
+            <li><a href="../services.html#styling">Interior Styling &amp; Furnishing</a></li>
+            <li><a href="../services.html#space-planning">3D Photorealistic Zoning</a></li>
+            <li><a href="../contact.html#booking">Diaspora Turnkey Oversight</a></li>
+            <li><a href="../journal.html">Editorial Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio &amp; Location</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Suite 11, Municipal Plaza, Umez Eronini Street, Ikenegbu, Owerri, Imo State</span>
+            </li>
+            <li class="footer-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+2347014093037" style="color:inherit; text-decoration:none;">+234 701 409 3037 (Direct)</a>
+            </li>
+            <li class="footer-contact-item">
+              <i data-lucide="message-circle"></i>
+              <a href="https://wa.me/2347014093037" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">WhatsApp: +234 701 409 3037</a>
+            </li>
+            <li class="footer-contact-item">
+              <i data-lucide="clock"></i>
+              <span>Monday – Saturday: 8:30 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__left">
+          <span>&copy; 2026 BRISTS Interior Design. All rights reserved.</span>
+          <span>•</span>
+          <span>Suite 11 Municipal Plaza, Ikenegbu, Owerri</span>
+          <span>•</span>
+          <span class="watermark-badge">
+            <i data-lucide="sparkles" class="icon-12"></i>
+            <span>Verdant Luxe Edition</span>
+          </span>
+        </div>
+
+        <div class="footer-bottom__right">
+          <a href="#site-nav" style="color:inherit; text-decoration:none; font-weight:600;">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top of page" title="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Application Logic -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
