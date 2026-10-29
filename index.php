@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon" href="assets/favicon-icons/camera_alt_45dp_E3E3E3.png" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=<?= filemtime(__DIR__ . '/css/style.css') ?>" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- Schema.org JSON-LD Structured Data for Brick Manufacturer & Construction -->
   <script type="application/ld+json">

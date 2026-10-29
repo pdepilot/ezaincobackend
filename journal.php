@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" href="assets/logo/ezainco-brick-logo.png" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=<?= filemtime(__DIR__ . '/css/style.css') ?>" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
