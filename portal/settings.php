@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin.css?v=<?= filemtime(__DIR__ . '/css/admin.css') ?>">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
-  <script src="js/admin.js" defer></script>
+  <script src="js/admin.js?v=<?= filemtime(__DIR__ . '/js/admin.js') ?>" defer></script>
   <!-- Favicon Icons -->
   <link rel="icon" type="image/png" href="../assets/favicon-icons/camera_alt_45dp_E3E3E3.png">
   <link rel="icon" type="image/png" sizes="45x45" href="../assets/favicon-icons/push_pin_45dp_E3E3E3.png">
@@ -51,10 +51,11 @@
     <a class="nav-link" href="profile.php" data-page="profile"><i data-lucide="user-round"></i><span>Admin profile</span></a>
     <a class="nav-link active" href="settings.php" data-page="settings"><i data-lucide="settings-2"></i><span>Settings</span></a>
   </nav>
-  <div class="sidebar-bottom"><div class="help-card"><span class="help-icon"><i data-lucide="life-buoy"></i></span><div><b>Need a hand?</b><small>View the setup guide</small></div><button class="icon-btn" id="helpBtn" aria-label="Setup guide"><i data-lucide="arrow-up-right"></i></button></div><div class="admin-mini"><div class="avatar"><img src="../assets/logo/ezainco-brick-logo.png" alt="Admin" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div><div class="admin-meta"><b id="sideAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div><button class="icon-btn" id="profileShortcut" aria-label="Profile"><i data-lucide="ellipsis"></i></button></div></div>
+  <div class="sidebar-bottom"><div class="help-card"><span class="help-icon"><i data-lucide="life-buoy"></i></span><div><b>Need a hand?</b><small>View the setup guide</small></div><button class="icon-btn" id="helpBtn" aria-label="Setup guide"><i data-lucide="arrow-up-right"></i></button></div><div class="admin-mini"><div class="avatar user-avatar" title="Operations Admin">CZ</div><div class="admin-meta"><b id="sideAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div><button class="icon-btn" id="profileShortcut" aria-label="Profile"><i data-lucide="ellipsis"></i></button></div></div>
 </aside>
 <main class="main">
-  <header class="topbar"><div class="top-left"><button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i data-lucide="menu"></i></button><button class="icon-btn collapse-btn" id="collapseBtn" aria-label="Collapse sidebar"><i data-lucide="panel-left"></i></button><div class="crumbs"><span>Workspace</span><i data-lucide="chevron-right"></i><b id="crumbTitle">Settings</b></div></div><div class="top-actions"><div class="live-pill"><span></span> All systems ready</div><button class="icon-btn theme-btn" id="themeBtn" aria-label="Toggle theme"><i data-lucide="moon"></i></button><button class="icon-btn" id="notificationsBtn" aria-label="Notifications"><i data-lucide="bell"></i><span class="notification-dot"></span></button><div class="top-user"><div class="avatar"><img src="../assets/logo/ezainco-brick-logo.png" alt="Admin" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div><div><b id="topAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div></div></div></header>
+  <header class="topbar"><div class="top-left"><button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i data-lucide="menu"></i></button><button class="icon-btn collapse-btn" id="collapseBtn" aria-label="Collapse sidebar"><i data-lucide="panel-left"></i></button>
+      <a href="dashboard.php" class="topbar-brand" title="E-ZAINCO BRICK Operations Portal"><img src="../assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO Logo" class="topbar-logo-img"><span class="topbar-brand-title">E-ZAINCO</span></a><div class="crumbs"><span>Workspace</span><i data-lucide="chevron-right"></i><b id="crumbTitle">Settings</b></div></div><div class="top-actions"><div class="live-pill"><span></span> All systems ready</div><button class="icon-btn theme-btn" id="themeBtn" aria-label="Toggle theme"><i data-lucide="moon"></i></button><button class="icon-btn" id="notificationsBtn" aria-label="Notifications"><i data-lucide="bell"></i><span class="notification-dot"></span></button><div class="top-user"><div class="avatar user-avatar" title="Operations Admin">CZ</div><div><b id="topAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div></div></div></header>
   <section class="page-wrap"><div id="pageContent"></div><footer class="footer"><span>© <span id="year"></span> E-ZAINCO BRICK Nigeria Ltd.</span><span>Building Strength. Creating Legacy. <i data-lucide="shield-check"></i></span></footer></section>
 </main>
 <div class="toast-region" id="toasts" aria-live="polite"></div>

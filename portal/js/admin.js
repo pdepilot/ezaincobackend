@@ -267,15 +267,15 @@ const seed = {
   status:'Published'
  },
  profile:{
-  name:'Engr. Chukwudi Zainco',
-  role:'Operations Director & Chief Engineer',
-  email:'admin@ezaincobrick.com',
-  phone:'+234 815 327 8764',
-  image:'../assets/logo/ezainco-brick-logo.png',
-  initials:'EZ',
-  location:'Municipal Plaza, Ikenegbu, Owerri',
-  bio:'Overseeing hydraulic compression operations, architectural brick manufacturing, and nationwide site logistics for E-ZAINCO BRICK.'
- }
+   name:'Engr. Chukwudi Zainco',
+   role:'Operations Director & Chief Engineer',
+   email:'admin@ezaincobrick.com',
+   phone:'+234 815 327 8764',
+   image:'',
+   initials:'CZ',
+   location:'Municipal Plaza, Ikenegbu, Owerri',
+   bio:'Overseeing hydraulic compression operations, architectural brick manufacturing, and nationwide site logistics for E-ZAINCO BRICK.'
+  }
 };
 
 let db = loadDb(), currentPage='dashboard', editId=null, editSection=null;
@@ -308,6 +308,11 @@ function loadDb(){
    };
 
    let needsMigration = false;
+   if(current.profile && current.profile.image && current.profile.image.includes('ezainco-brick-logo.png')){
+    current.profile.image = '';
+    current.profile.initials = 'CZ';
+    needsMigration = true;
+   }
    if(Array.isArray(current.projects)){
     const hasAvif = current.projects.some(p => p.image && (p.image.includes('.avif') || !p.image));
     const hasOldTitles = current.projects.some(p => p.title && (p.title.includes('Civic Penthouse') || p.title.includes('Sanctuary Master Retreat')));
@@ -432,16 +437,22 @@ function dashboard(){
  const stats=[['Masonry Projects',projects.length,'panels-top-left','Catalog records'],['Live Showcase Projects',published,'eye','Visible on website'],['Technical Journal',articles.length,'notebook-pen','Engineering insights'],['Consultation Requests',leads.length,'calendar-check','BOQ & supply leads']];
  return `${heading('Good afternoon, Operations Team 👋','Real-time production, site delivery, and masonry project tracking across Nigeria.',button('Add new project','new-project',true,'plus'))}
  <div class="welcome-banner">
-  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
-   <img src="../assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo" class="brand-logo-img" style="height:56px;width:auto;background:#fff;padding:6px 12px;border-radius:12px;border:1px solid rgba(255,255,255,0.3);box-shadow:0 4px 14px rgba(0,0,0,0.18)">
-   <div>
-    <p class="eyebrow" style="color:#D6E9DA;margin-bottom:4px;letter-spacing:1.5px">E-ZAINCO BRICK OPERATIONS PORTAL</p>
-    <h2 style="font-size:26px;line-height:1.2;margin:0 0 6px">Engineered Density. Built for Legacy.</h2>
-    <p style="margin:0;opacity:0.9">Manage certified earth &amp; clay brick catalog, kiln schedules, automated BOQ requests, and nationwide site case studies.</p>
+   <div class="welcome-banner-inner">
+    <div class="welcome-banner-left">
+     <div class="welcome-logo-badge">
+      <img src="../assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO BRICK Logo">
+     </div>
+     <div class="welcome-copy">
+      <p class="welcome-eyebrow">E-ZAINCO BRICK • OPERATIONS PORTAL</p>
+      <h2 class="welcome-title">Engineered Density. Built for Legacy.</h2>
+      <p class="welcome-desc">Real-time brick production, kiln schedules, automated BOQ requests, and nationwide architectural masonry tracking.</p>
+     </div>
+    </div>
+    <div class="welcome-banner-right">
+     <button class="btn welcome-btn" data-action="go-projects">${icon('arrow-up-right')} Manage Projects</button>
+    </div>
    </div>
   </div>
-  <button class="btn" data-action="go-projects">${icon('arrow-up-right')} Manage Projects</button>
- </div>
  <div class="stats-grid">${stats.map((s,i)=>`<article class="stat-card"><div class="stat-head"><span>${s[0]}</span><span class="stat-icon ${i===2?'gold':''}">${icon(s[2])}</span></div><div class="stat-value">${s[1]}</div><div class="stat-foot"><strong>${i===0?'Projects':i===1?'Published':i===2?'Technical':'Client Intake'}</strong> · ${s[3]}</div></article>`).join('')}</div>
  <div class="content-grid"><section class="panel"><div class="panel-head"><div><h2>Operations &amp; Content Activity</h2><p>Active records across the E-ZAINCO platform</p></div><button class="text-link" data-page-link="analytics">View analytics ↗</button></div><div class="chart">${[['Projects',projects.length],['Journal',articles.length],['Services',(db.services||[]).length],['Pages',(db.pages||[]).length],['Team',(db.team||[]).length],['FAQs',(db.faqs||[]).length],['Reviews',(db.testimonials||[]).length]].map((x,i)=>`<div class="chart-col"><div class="chart-bars"><div class="bar ${i%2===0?'primary':''}" style="height:${Math.max(8,Math.min(100,x[1]*14))}%"></div></div><small>${x[0]}</small></div>`).join('')}</div><div class="chart-legend"><span><i class="legend-dot"></i>Active records</span><span><i class="legend-dot pale"></i>Inventory volume</span></div></section>
  <section class="panel"><div class="panel-head"><div><h2>Recent Factory &amp; Site Updates</h2><p>Latest operational records</p></div><span class="status published">System Online</span></div><div class="activity-list">${[{ic:'panels-top-left',title:'Masonry Catalog Synced',sub:`${projects.length} architectural projects with photo records`},{ic:'notebook-pen',title:'Technical Journal Ready',sub:`${articles.length} engineering articles active`},{ic:'calendar-check',title:'Client Consultation Queue',sub:`${leads.filter(x=>x.status==='New').length} pending client inquiry`},{ic:'shield-check',title:'Quality Control Verified',sub:'12.5 MPa tested compressive strength'}].map(x=>`<div class="activity"><span class="activity-icon">${icon(x.ic)}</span><div class="activity-copy"><b>${x.title}</b><small>${x.sub}</small></div></div>`).join('')}</div></section></div>

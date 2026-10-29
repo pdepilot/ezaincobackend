@@ -71,7 +71,7 @@ try {
   </nav>
   <div class="sidebar-bottom">
     <div class="help-card"><span class="help-icon"><i data-lucide="life-buoy"></i></span><div><b>Need assistance?</b><small>Factory support &amp; guides</small></div><button class="icon-btn" id="helpBtn" aria-label="Setup guide"><i data-lucide="arrow-up-right"></i></button></div>
-    <div class="admin-mini"><div class="avatar"><img src="../assets/logo/ezainco-brick-logo.png" alt="Admin" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div><div class="admin-meta"><b id="sideAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div><button class="icon-btn" id="profileShortcut" aria-label="Profile"><i data-lucide="ellipsis"></i></button></div>
+    <div class="admin-mini"><div class="avatar user-avatar" title="Operations Admin">CZ</div><div class="admin-meta"><b id="sideAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div><button class="icon-btn" id="profileShortcut" aria-label="Profile"><i data-lucide="ellipsis"></i></button></div>
   </div>
 </aside>
 <main class="main">
@@ -79,13 +79,14 @@ try {
     <div class="top-left">
       <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i data-lucide="menu"></i></button>
       <button class="icon-btn collapse-btn" id="collapseBtn" aria-label="Collapse sidebar"><i data-lucide="panel-left"></i></button>
+      <a href="dashboard.php" class="topbar-brand" title="E-ZAINCO BRICK Operations Portal"><img src="../assets/logo/ezainco-brick-logo.png" alt="E-ZAINCO Logo" class="topbar-logo-img"><span class="topbar-brand-title">E-ZAINCO</span></a>
       <div class="crumbs"><span>Workspace</span><i data-lucide="chevron-right"></i><b id="crumbTitle">Projects &amp; Catalog</b></div>
     </div>
     <div class="top-actions">
       <div class="live-pill"><span></span> All systems ready</div>
       <button class="icon-btn theme-btn" id="themeBtn" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
       <button class="icon-btn" id="notificationsBtn" aria-label="Notifications"><i data-lucide="bell"></i><span class="notification-dot"></span></button>
-      <div class="top-user"><div class="avatar"><img src="../assets/logo/ezainco-brick-logo.png" alt="Admin" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div><div><b id="topAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div></div>
+      <div class="top-user"><div class="avatar user-avatar" title="Operations Admin">CZ</div><div><b id="topAdminName">Operations Admin</b><small>Plant &amp; Site Manager</small></div></div>
     </div>
   </header>
   <section class="page-wrap"><div id="pageContent"></div><footer class="footer"><span>© <span id="year"></span> E-ZAINCO BRICK Nigeria Ltd.</span><span>Building Strength. Creating Legacy. <i data-lucide="shield-check"></i></span></footer></section>
